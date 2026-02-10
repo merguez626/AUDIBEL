@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUDIBEL - Catalogue des appareils auditifs.">
+  <title>AUDIBEL | Catalogue appareils</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="device-page">
+  <header class="page-topbar">
+    <div class="page-topbar-inner">
+      <a href="index.html#appareils" class="back-link">&#8592; Retour a l'accueil</a>
+      <a href="index.html#contact" class="btn btn-primary">Prendre rendez-vous</a>
+    </div>
+  </header>
+
+  <main class="section device-page-main">
+    <section class="container catalog-head reveal">
+      <p class="eyebrow">Catalogue AUDIBEL</p>
+      <h1>Tous nos appareils auditifs</h1>
+      <p>
+        Consultez la gamme complete et cliquez sur un modele pour voir sa page dediee.
+      </p>
+      <div class="catalog-controls" aria-label="Tri des appareils">
+        <button type="button" class="catalog-filter active" data-filter="all">Tous</button>
+        <button type="button" class="catalog-filter" data-filter="interne">Interne</button>
+        <button type="button" class="catalog-filter" data-filter="externe">Externe</button>
+      </div>
+      <p id="catalog-count" class="catalog-count"></p>
+    </section>
+
+    <section class="container">
+      <div id="devices-catalog-grid" class="devices-catalog-grid"></div>
+    </section>
+  </main>
+
+  <script src="devices-data.js"></script>
+  <script src="appareils.js"></script>
+</body>
+</html>

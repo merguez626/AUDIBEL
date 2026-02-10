@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUDIBEL - Detail d'un appareil auditif.">
+  <title>AUDIBEL | Detail appareil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="device-page">
+  <header class="page-topbar">
+    <div class="page-topbar-inner">
+      <a href="appareils.html" class="back-link">&#8592; Retour aux appareils</a>
+      <a href="index.html#contact" class="btn btn-primary">Prendre rendez-vous</a>
+    </div>
+  </header>
+
+  <main class="section device-page-main">
+    <div class="container device-detail-grid">
+      <figure class="device-visual reveal">
+        <img id="device-image" src="" alt="">
+        <figcaption class="device-visual-caption" id="device-caption">
+          AUDIBEL - Solution auditive
+        </figcaption>
+      </figure>
+
+      <article class="device-info-card reveal">
+        <p class="eyebrow">Appareil auditif</p>
+        <h1 id="device-title">AUDIBEL</h1>
+        <span id="device-category" class="device-tag"></span>
+        <p id="device-description"></p>
+        <ul id="device-highlights" class="device-highlights"></ul>
+        <div class="device-detail-actions">
+          <a class="btn btn-primary" href="tel:+32470206226">Appeler pour RDV</a>
+          <a class="btn btn-ghost" href="index.html#contact">Adresse et contact</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="container">
+      <section class="device-extra-card reveal">
+        <p class="eyebrow">Informations AUDIBEL</p>
+        <h2>Accompagnement personnalise en magasin</h2>
+        <div class="device-extra-grid">
+          <article class="device-extra-box">
+            <h3>Adresse de consultation</h3>
+            <p>Rue du Sart-Tilman 384, 4031 Liege</p>
+          </article>
+          <article class="device-extra-box">
+            <h3>Telephone RDV</h3>
+            <p>0470 20 62 26</p>
+          </article>
+          <article class="device-extra-box">
+            <h3>Suivi</h3>
+            <p>Reglages, conseils d'utilisation et entretien de vos appareils.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="devices-data.js"></script>
+  <script src="appareil.js"></script>
+</body>
+</html>

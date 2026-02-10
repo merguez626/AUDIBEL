@@ -21,7 +21,9 @@
       <nav class="main-nav">
         <a href="#accueil" class="nav-link active">Accueil</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#appareils" class="nav-link">Appareils</a>
+        <a href="#remboursement" class="nav-link">Remboursement</a>
+        <a href="#symptomes" class="nav-link">Symptomes</a>
+        <a href="appareils.html" class="nav-link">Appareils</a>
         <a href="#apropos" class="nav-link">A propos</a>
         <a href="#contact" class="nav-link">Contact</a>
         <span class="nav-indicator" aria-hidden="true"></span>
@@ -87,16 +89,138 @@
       </div>
     </section>
 
+    <section class="section reimbursement" id="remboursement">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Remboursement mutualite</p>
+          <h2>Ce qu'il faut savoir pour 2026</h2>
+          <p class="section-text">
+            Le remboursement se divise en deux parties: l'intervention de base obligatoire via l'INAMI,
+            et les avantages complementaires de votre mutualite.
+          </p>
+        </div>
+
+        <div class="reimbursement-grid">
+          <article class="reimbursement-card reveal">
+            <h3>1. Perte auditive</h3>
+            <p>Perte d'au moins 35 dB (moyenne de frequences INAMI) a l'oreille a appareiller.</p>
+          </article>
+          <article class="reimbursement-card reveal">
+            <h3>2. Prescription ORL</h3>
+            <p>L'appareil doit etre prescrit par un medecin ORL.</p>
+          </article>
+          <article class="reimbursement-card reveal">
+            <h3>3. Gain prouve</h3>
+            <p>Apres un essai obligatoire de minimum 28 jours, un gain d'au moins 5 dB doit etre constate.</p>
+          </article>
+        </div>
+
+        <div class="reimbursement-table-wrap reveal">
+          <table class="reimbursement-table">
+            <thead>
+              <tr>
+                <th>Categorie d'age</th>
+                <th>1 oreille (Monophonique)</th>
+                <th>2 oreilles (Stereophonique)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Moins de 18 ans</td>
+                <td>Env. 1.451 EUR</td>
+                <td>Env. 2.875 EUR</td>
+              </tr>
+              <tr>
+                <td>18 a 64 ans</td>
+                <td>Env. 884 EUR</td>
+                <td>Env. 1.751 EUR</td>
+              </tr>
+              <tr>
+                <td>65 ans et plus</td>
+                <td>Env. 859 EUR</td>
+                <td>Env. 1.701 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="reimbursement-note reveal">
+          Montants indicatifs INAMI 2026. Le montant exact peut varier de quelques euros selon votre statut
+          (BIM/VIPO ou ordinaire) et les avantages de votre mutualite. Une partie peut rester a votre charge
+          (ticket moderateur), sauf situations specifique comme les moins de 18 ans.
+        </p>
+      </div>
+    </section>
+
+    <section class="section symptoms" id="symptomes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Signes a surveiller</p>
+          <h2>Signes et symptomes de la perte auditive</h2>
+          <p class="section-text">
+            La perte auditive s'installe souvent progressivement. Plusieurs signes reviennent
+            frequemment et meritent un bilan si vous les remarquez au quotidien.
+          </p>
+        </div>
+        <div class="symptoms-grid">
+          <article class="symptom-card reveal">
+            <h3>Conversations fatigantes</h3>
+            <p>Vous suivez moins facilement les discussions, surtout dans les lieux bruyants.</p>
+          </article>
+          <article class="symptom-card reveal">
+            <h3>Besoin de repetition</h3>
+            <p>Vous demandez regulierement de repeter ou vous avez l'impression qu'on articule moins bien.</p>
+          </article>
+          <article class="symptom-card reveal">
+            <h3>Volume trop eleve</h3>
+            <p>Vos proches vous signalent souvent que la television ou la radio sont reglees trop fort.</p>
+          </article>
+          <article class="symptom-card reveal">
+            <h3>Appels moins clairs</h3>
+            <p>Les conversations telephoniques deviennent difficiles, avec des mots manques.</p>
+          </article>
+          <article class="symptom-card reveal">
+            <h3>Sifflements ou bourdonnements</h3>
+            <p>Des sons internes (acouphenes) peuvent apparaitre en plus d'une baisse d'audition.</p>
+          </article>
+          <article class="symptom-card reveal">
+            <h3>Doute sur l'origine des sons</h3>
+            <p>Vous reperez moins facilement d'ou vient un son dans l'environnement.</p>
+          </article>
+        </div>
+        <div class="symptoms-alert reveal">
+          Une baisse auditive soudaine, une douleur importante ou des vertiges necessitent
+          un avis medical rapide.
+        </div>
+      </div>
+    </section>
+
     <section class="section devices" id="appareils">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Collection appareils</p>
-          <h2>Une selection d'une dizaine de modeles</h2>
+          <h2>Apercu de quelques modeles</h2>
           <p class="section-text">
-            Remplacez facilement chaque image et description avec vos modeles reels. La structure est deja prete.
+            Sur l'accueil, nous affichons 4 appareils. Cliquez sur Voir plus pour consulter toute la gamme.
           </p>
         </div>
-        <div id="devices-grid" class="devices-grid"></div>
+
+        <div class="carousel-shell reveal">
+          <button class="carousel-btn" data-carousel="prev" aria-label="Appareil precedent">
+            <span aria-hidden="true">&#10094;</span>
+          </button>
+          <div id="devices-carousel" class="devices-carousel" aria-live="polite">
+            <div id="devices-carousel-track" class="devices-carousel-track"></div>
+          </div>
+          <button class="carousel-btn" data-carousel="next" aria-label="Appareil suivant">
+            <span aria-hidden="true">&#10095;</span>
+          </button>
+        </div>
+
+        <div id="carousel-dots" class="carousel-dots"></div>
+        <div class="devices-more reveal">
+          <a class="btn btn-primary" href="appareils.html">Voir plus d'appareils</a>
+        </div>
       </div>
     </section>
 
@@ -154,6 +278,7 @@
     </div>
   </footer>
 
+  <script src="devices-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
