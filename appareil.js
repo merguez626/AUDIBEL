@@ -1,4 +1,4 @@
-const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
+﻿const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
 
 const titleNode = document.getElementById("device-title");
 const categoryNode = document.getElementById("device-category");
@@ -90,3 +90,4 @@ function init() {
 }
 
 init();
+

@@ -1,4 +1,4 @@
-window.AUDIBEL_DEVICES = [
+﻿window.AUDIBEL_DEVICES = [
   {
     id: 1,
     slug: "pure-air-1",
@@ -150,3 +150,4 @@ window.AUDIBEL_DEVICES = [
     image: "image/In-The-Ear-1.png"
   }
 ];
+

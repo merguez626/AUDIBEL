@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUDIBEL - Solutions auditives.">
+  <title>AUDIBEL | Solution Auditives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="solutions">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">AUDIBEL</a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
+        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
+        <a href="solutions.html" class="nav-link" data-page="solutions">Solution Auditives</a>
+        <a href="service.html" class="nav-link" data-page="service">Service</a>
+        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix &amp; Rembourcement</a>
+        <a href="apropos.html" class="nav-link" data-page="about">A propos</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main class="section page-main">
+    <section class="container topic-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">SOLUTIONS AUDITIVES</p>
+        <h1>Nous proposons des appareils auditifs primés et conçus par les plus grands fabricants.</h1>
+        <p class="lead">Nous restons indépendants pour comparer plusieurs marques et vous proposer la solution la plus adaptée à votre audition, votre style de vie et votre budget.</p>
+        <ul class="doc-list manufacturer-list">
+          <li>STARKEY</li>
+          <li>PHONAK</li>
+          <li>UNITRON</li>
+          <li>OTICON</li>
+          <li>BERNAFON</li>
+          <li>SIGNIA</li>
+        </ul>
+      </div>
+      <figure class="media-panel reveal">
+        <img src="image/docx/image7.png" alt="Solutions auditives">
+      </figure>
+    </section>
+
+    <section class="container section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Fabricants partenaires</p>
+        <h2>Des fabricants reconnus, comparés pour vous</h2>
+      </div>
+      <div class="manufacturer-grid reveal">
+        <article class="manufacturer-card">
+          <h3>OTICON</h3>
+          <p>Clarté de la parole et confort d'écoute naturel.</p>
+        </article>
+        <article class="manufacturer-card">
+          <h3>PHONAK</h3>
+          <p>Technologies robustes et bonne performance dans le bruit.</p>
+        </article>
+        <article class="manufacturer-card">
+          <h3>SIGNIA</h3>
+          <p>Design discret, connectivité avancée et usage intuitif.</p>
+        </article>
+        <article class="manufacturer-card">
+          <h3>STARKEY</h3>
+          <p>Innovation orientée santé, confort et personnalisation.</p>
+        </article>
+        <article class="manufacturer-card">
+          <h3>UNITRON</h3>
+          <p>Souplesse d'évolution et adaptation progressive.</p>
+        </article>
+        <article class="manufacturer-card">
+          <h3>BERNAFON</h3>
+          <p>Équilibre entre naturel sonore et simplicité au quotidien.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section split-block">
+      <article class="doc-block reveal">
+        <h2>Connectivité Bluetooth</h2>
+        <p>Les appareils auditifs Bluetooth vous permettent de vous connecter sans fil à de nombreux appareils. Vous pouvez écouter de la musique, recevoir vos appels téléphoniques et écouter le son de la télévision directement dans vos appareils auditifs ou via une application.</p>
+      </article>
+      <figure class="media-panel reveal">
+        <img src="image/docx/image8.png" alt="Connectivité Bluetooth">
+      </figure>
+    </section>
+
+    <section class="container section split-block">
+      <figure class="media-panel reveal">
+        <img src="image/docx/image9.png" alt="Batteries rechargeables">
+      </figure>
+      <article class="doc-block reveal">
+        <h2>Batteries rechargeables</h2>
+        <p>Les batteries rechargeables sont plus économiques et plus écologiques quand on les compare aux piles jetables, qui doivent être renouvelées régulièrement.</p>
+        <a class="btn btn-primary" href="appareils.html">Voir le catalogue complet</a>
+      </article>
+    </section>
+
+    <section class="container section split-block align-center">
+      <article class="doc-block reveal">
+        <h2>Accessoires et commandes</h2>
+        <p>Selon vos besoins, nous ajoutons des accessoires utiles : télécommande, micro externe, connexion TV et solutions de pilotage simplifiées.</p>
+        <p>Chaque accessoire est proposé uniquement s'il apporte un vrai confort dans votre quotidien.</p>
+      </article>
+      <figure class="media-panel reveal media-panel-compact">
+        <img src="image/docx/image12.png" alt="Accessoires auditifs">
+      </figure>
+    </section>
+
+    <section class="container section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Aperçu modèles</p>
+        <h2>Quelques appareils disponibles</h2>
+      </div>
+      <div class="carousel-shell reveal">
+        <button class="carousel-btn" data-carousel="prev" aria-label="Appareil precedent">
+          <span aria-hidden="true">&#10094;</span>
+        </button>
+        <div id="devices-carousel" class="devices-carousel" aria-live="polite">
+          <div id="devices-carousel-track" class="devices-carousel-track"></div>
+        </div>
+        <button class="carousel-btn" data-carousel="next" aria-label="Appareil suivant">
+          <span aria-hidden="true">&#10095;</span>
+        </button>
+      </div>
+      <div id="carousel-dots" class="carousel-dots"></div>
+      <div class="criteria-grid reveal">
+        <article class="criteria-card">
+          <h3>Niveau de perte auditive</h3>
+          <p>Déterminé par un test auditif professionnel à domicile.</p>
+        </article>
+        <article class="criteria-card">
+          <h3>Confort et esthétique</h3>
+          <p>Taille, forme et discrétion de l'aide auditive.</p>
+        </article>
+        <article class="criteria-card">
+          <h3>Technologie</h3>
+          <p>Modèles numériques, rechargeables et connectés (Bluetooth).</p>
+        </article>
+        <article class="criteria-card">
+          <h3>Budget et aides financières</h3>
+          <p>Prise en charge AI, AVS et assurances complémentaires.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>AUDIBEL - Rue du Sart-Tilman 384, 4031 Liège - 0470 20 62 26</p>
+      <a href="index.html">Accueil</a>
+    </div>
+  </footer>
+
+  <script src="devices-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

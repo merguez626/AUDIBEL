@@ -1,4 +1,4 @@
-const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
+﻿const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
 const catalogGrid = document.getElementById("devices-catalog-grid");
 const filterButtons = [...document.querySelectorAll(".catalog-filter")];
 const catalogCount = document.getElementById("catalog-count");
@@ -138,3 +138,4 @@ function init() {
 }
 
 init();
+

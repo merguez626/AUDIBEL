@@ -1,31 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AUDIBEL - Magasin d'appareils auditifs a Liege. Consultation, accompagnement et solutions auditives modernes.">
-  <title>AUDIBEL | Appareils auditifs a Liege</title>
+  <meta name="description" content="AUDIBEL - Centre auditif à Liège.">
+  <title>AUDIBEL | Accueil</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#accueil" class="brand">AUDIBEL</a>
+      <a href="index.html" class="brand">AUDIOBEL</a>
       <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
       <nav class="main-nav">
-        <a href="#accueil" class="nav-link active">Accueil</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#remboursement" class="nav-link">Remboursement</a>
-        <a href="#symptomes" class="nav-link">Symptomes</a>
-        <a href="appareils.html" class="nav-link">Appareils</a>
-        <a href="#apropos" class="nav-link">A propos</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
+        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
+        <a href="solutions.html" class="nav-link" data-page="solutions">Solution Auditives</a>
+        <a href="service.html" class="nav-link" data-page="service">Service</a>
+        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix &amp; Rembourcement</a>
+        <a href="apropos.html" class="nav-link" data-page="about">A propos</a>
         <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
     </div>
@@ -33,178 +32,78 @@
   </header>
 
   <main>
-    <section class="section hero" id="accueil">
+    <section class="section hero home-hero">
       <div class="hero-bg-shape shape-one" aria-hidden="true"></div>
       <div class="hero-bg-shape shape-two" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Centre auditif a Liege</p>
-          <h1>Retrouvez une ecoute claire et confortable au quotidien.</h1>
+      <div class="container home-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Notre philosophie</p>
+          <h1>Vous aider à retrouver les sons qui vous manquent.</h1>
           <p class="lead">
-            AUDIBEL vous accompagne avec des solutions auditives discretes et performantes,
-            adaptees a votre style de vie.
+            Souvenez-vous, lorsque vous aviez 20 ans… Bell’Bell’Bell’ la vie…
+          </p>
+          <p class="lead">
+            L’audition est une saveur et ses plus beaux moments s’apprécient et s’entendent. Pourtant 10% de la population Belge souffre d’une perte auditive !
+          </p>
+          <p class="lead">
+            Notre philosophie est simple : vous aider à lutter contre l’isolement — ou à en sortir —
+            en vous aidant à mieux entendre, de manière experte et professionnelle.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+32470206226">Prendre rendez-vous</a>
-            <a class="btn btn-ghost" href="#appareils">Voir les appareils</a>
+            <a class="btn btn-primary" href="tel:+32470206226">Prendre Rdv au 0470 206 226</a>
+            <a class="btn btn-ghost" href="audition.html">Comprendre les signes</a>
           </div>
-          <ul class="hero-points">
-            <li>Suivi personnalise en consultation</li>
-            <li>Reglages precis pour un confort optimal</li>
-            <li>Conseils clairs et accompagnement humain</li>
-          </ul>
         </div>
-
-        <aside class="hero-card reveal">
-          <h2>Informations pratiques</h2>
-          <p><strong>Adresse de consultation</strong><br>Rue du Sart-Tilman 384, 4031 Liege</p>
-          <p><strong>Telephone RDV</strong><br><a href="tel:+32470206226">0470 20 62 26</a></p>
-          <div class="hero-card-note">
-            Votre audition merite une solution sur mesure. Parlons-en en magasin.
-          </div>
-        </aside>
+        <figure class="media-panel reveal">
+          <img src="image/docx/image1.jpeg" alt="Illustration audition">
+        </figure>
       </div>
     </section>
 
-    <section class="section services" id="services">
+    <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Nos services</p>
-          <h2>Un accompagnement professionnel de A a Z</h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <h3>Bilan et conseil</h3>
-            <p>Evaluation de vos besoins, ecoute de votre quotidien et recommandations claires.</p>
-          </article>
-          <article class="service-card reveal">
-            <h3>Adaptation sur mesure</h3>
-            <p>Choix de l'appareil, reglages progressifs et optimisation de l'intelligibilite.</p>
-          </article>
-          <article class="service-card reveal">
-            <h3>Suivi et entretien</h3>
-            <p>Controle regulier, nettoyage, assistance et ajustements selon votre evolution.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reimbursement" id="remboursement">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Remboursement mutualite</p>
-          <h2>Ce qu'il faut savoir pour 2026</h2>
+          <p class="eyebrow">Parcours AUDIOBEL</p>
+          <h2>Chaque sujet sur sa page dédiée</h2>
           <p class="section-text">
-            Le remboursement se divise en deux parties: l'intervention de base obligatoire via l'INAMI,
-            et les avantages complementaires de votre mutualite.
+            Naviguez par thème pour lire le contenu complet.
           </p>
         </div>
-
-        <div class="reimbursement-grid">
-          <article class="reimbursement-card reveal">
-            <h3>1. Perte auditive</h3>
-            <p>Perte d'au moins 35 dB (moyenne de frequences INAMI) a l'oreille a appareiller.</p>
-          </article>
-          <article class="reimbursement-card reveal">
-            <h3>2. Prescription ORL</h3>
-            <p>L'appareil doit etre prescrit par un medecin ORL.</p>
-          </article>
-          <article class="reimbursement-card reveal">
-            <h3>3. Gain prouve</h3>
-            <p>Apres un essai obligatoire de minimum 28 jours, un gain d'au moins 5 dB doit etre constate.</p>
-          </article>
-        </div>
-
-        <div class="reimbursement-table-wrap reveal">
-          <table class="reimbursement-table">
-            <thead>
-              <tr>
-                <th>Categorie d'age</th>
-                <th>1 oreille (Monophonique)</th>
-                <th>2 oreilles (Stereophonique)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Moins de 18 ans</td>
-                <td>Env. 1.451 EUR</td>
-                <td>Env. 2.875 EUR</td>
-              </tr>
-              <tr>
-                <td>18 a 64 ans</td>
-                <td>Env. 884 EUR</td>
-                <td>Env. 1.751 EUR</td>
-              </tr>
-              <tr>
-                <td>65 ans et plus</td>
-                <td>Env. 859 EUR</td>
-                <td>Env. 1.701 EUR</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="reimbursement-note reveal">
-          Montants indicatifs INAMI 2026. Le montant exact peut varier de quelques euros selon votre statut
-          (BIM/VIPO ou ordinaire) et les avantages de votre mutualite. Une partie peut rester a votre charge
-          (ticket moderateur), sauf situations specifique comme les moins de 18 ans.
-        </p>
-      </div>
-    </section>
-
-    <section class="section symptoms" id="symptomes">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Signes a surveiller</p>
-          <h2>Signes et symptomes de la perte auditive</h2>
-          <p class="section-text">
-            La perte auditive s'installe souvent progressivement. Plusieurs signes reviennent
-            frequemment et meritent un bilan si vous les remarquez au quotidien.
-          </p>
-        </div>
-        <div class="symptoms-grid">
-          <article class="symptom-card reveal">
-            <h3>Conversations fatigantes</h3>
-            <p>Vous suivez moins facilement les discussions, surtout dans les lieux bruyants.</p>
-          </article>
-          <article class="symptom-card reveal">
-            <h3>Besoin de repetition</h3>
-            <p>Vous demandez regulierement de repeter ou vous avez l'impression qu'on articule moins bien.</p>
-          </article>
-          <article class="symptom-card reveal">
-            <h3>Volume trop eleve</h3>
-            <p>Vos proches vous signalent souvent que la television ou la radio sont reglees trop fort.</p>
-          </article>
-          <article class="symptom-card reveal">
-            <h3>Appels moins clairs</h3>
-            <p>Les conversations telephoniques deviennent difficiles, avec des mots manques.</p>
-          </article>
-          <article class="symptom-card reveal">
-            <h3>Sifflements ou bourdonnements</h3>
-            <p>Des sons internes (acouphenes) peuvent apparaitre en plus d'une baisse d'audition.</p>
-          </article>
-          <article class="symptom-card reveal">
-            <h3>Doute sur l'origine des sons</h3>
-            <p>Vous reperez moins facilement d'ou vient un son dans l'environnement.</p>
-          </article>
-        </div>
-        <div class="symptoms-alert reveal">
-          Une baisse auditive soudaine, une douleur importante ou des vertiges necessitent
-          un avis medical rapide.
+        <div class="topic-links-grid">
+          <a class="topic-link-card reveal" href="audition.html">
+            <h3>L'audition</h3>
+            <p>Symptômes, degrés de perte et étapes à suivre.</p>
+          </a>
+          <a class="topic-link-card reveal" href="solutions.html">
+            <h3>Solution Auditives</h3>
+            <p>Marques, connectivité Bluetooth, rechargeable.</p>
+          </a>
+          <a class="topic-link-card reveal" href="service.html">
+            <h3>Service</h3>
+            <p>Bilan auditif clinique, précis et personnalisé.</p>
+          </a>
+          <a class="topic-link-card reveal" href="prix-remboursement.html">
+            <h3>Prix &amp; Rembourcement</h3>
+            <p>Tarifs, INAMI, mutuelles, FAQ et reste à charge.</p>
+          </a>
+          <a class="topic-link-card reveal" href="apropos.html">
+            <h3>A propos</h3>
+            <p>Notre philosophie et l’accompagnement AUDIBEL.</p>
+          </a>
+          <a class="topic-link-card reveal" href="appareils.html">
+            <h3>Catalogue appareils</h3>
+            <p>Voir les modèles et pages détaillées appareil.</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section devices" id="appareils">
+    <section class="section devices">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Collection appareils</p>
-          <h2>Apercu de quelques modeles</h2>
-          <p class="section-text">
-            Sur l'accueil, nous affichons 4 appareils. Cliquez sur Voir plus pour consulter toute la gamme.
-          </p>
+          <p class="eyebrow">Aperçu appareils</p>
+          <h2>Quelques modèles en vitrine</h2>
         </div>
-
         <div class="carousel-shell reveal">
           <button class="carousel-btn" data-carousel="prev" aria-label="Appareil precedent">
             <span aria-hidden="true">&#10094;</span>
@@ -216,7 +115,6 @@
             <span aria-hidden="true">&#10095;</span>
           </button>
         </div>
-
         <div id="carousel-dots" class="carousel-dots"></div>
         <div class="devices-more reveal">
           <a class="btn btn-primary" href="appareils.html">Voir plus d'appareils</a>
@@ -224,48 +122,60 @@
       </div>
     </section>
 
-    <section class="section about" id="apropos">
-      <div class="container about-grid">
-        <div class="about-card reveal">
-          <p class="eyebrow">Pourquoi AUDIBEL</p>
-          <h2>Une approche moderne et humaine de l'audition</h2>
-          <p>
-            Chez AUDIBEL, chaque patient est accompagne avec precision et transparence.
-            Notre objectif est simple: vous aider a retrouver une audition sereine dans
-            les situations de tous les jours.
-          </p>
+    <section class="section">
+      <div class="container split-block no-table-scroll-layout">
+        <div class="doc-block reveal">
+          <h2>5 étapes clé pour récupérer un plaisir d’entendre :</h2>
+          <ul class="doc-list">
+            <li>Prendre Rdv au 0470 206 226</li>
+            <li>Bilan ORL/AUDITIF clinique complet</li>
+            <li>Comprendre les signes d’une perte auditive et agir</li>
+            <li>Essai gratuit pendant 30 jours et sans engagement</li>
+            <li>Souriez !</li>
+          </ul>
         </div>
-        <div class="about-list reveal">
-          <article>
-            <h3>Ecoute active</h3>
-            <p>Nous prenons le temps de comprendre vos habitudes et vos attentes.</p>
-          </article>
-          <article>
-            <h3>Technologie recente</h3>
-            <p>Des appareils discrets et performants pour mieux entendre sans contrainte.</p>
-          </article>
-          <article>
-            <h3>Suivi continu</h3>
-            <p>Vous n'etes jamais seul apres l'achat: nous assurons les ajustements necessaires.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container contact-wrap">
-        <div class="contact-main reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Prenez rendez-vous avec AUDIBEL</h2>
-          <p>
-            Nous vous recevons a Liege pour une consultation et un accompagnement sur mesure.
-          </p>
-          <a class="btn btn-primary" href="tel:+32470206226">Appeler maintenant</a>
-        </div>
-        <div class="contact-card reveal">
-          <p><strong>Adresse</strong><br>Rue du Sart-Tilman 384<br>4031 Liege</p>
-          <p><strong>Telephone</strong><br><a href="tel:+32470206226">0470 20 62 26</a></p>
-          <p><strong>Disponibilite</strong><br>Du lundi au samedi sur rendez-vous</p>
+        <div class="reimbursement-table-wrap procedure-table reveal">
+          <table class="reimbursement-table">
+            <thead>
+              <tr>
+                <th>étape</th>
+                <th>Détail de la procédure</th>
+                <th>Durée moyenne</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Entretien initial</td>
+                <td>Nous analysons vos antécédents et votre mode de vie, car chaque audition est unique.</td>
+                <td>10 min</td>
+              </tr>
+              <tr>
+                <td>2. Examen des oreilles</td>
+                <td>Vérification minutieuse du conduit auditif et du tympan avec un matériel médical.</td>
+                <td>5 min</td>
+              </tr>
+              <tr>
+                <td>3. Mesure de votre audition</td>
+                <td>Pour identifier précisément là où vous entendez moins bien.</td>
+                <td>10 min</td>
+              </tr>
+              <tr>
+                <td>4. Test de compréhension de la parole</td>
+                <td>En silence et en bruit, pour refléter vos situations réelles du quotidien.</td>
+                <td>10 min</td>
+              </tr>
+              <tr>
+                <td>5. Test de tolérance au bruit</td>
+                <td>Pour détecter une éventuelle hyperacousie.</td>
+                <td>5 min</td>
+              </tr>
+              <tr>
+                <td>6. Analyse des acouphènes</td>
+                <td>Si nécessaire, nous mesurons leur fréquence et leur intensité.</td>
+                <td>5 min</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -273,8 +183,8 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>AUDIBEL - Appareils auditifs a Liege</p>
-      <a href="#accueil">Retour en haut</a>
+      <p>AUDIBEL - Rue du Sart-Tilman 384, 4031 Liège - 0470 20 62 26</p>
+      <a href="index.html">Accueil</a>
     </div>
   </footer>
 
@@ -282,3 +192,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
