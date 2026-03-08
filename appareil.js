@@ -19,7 +19,7 @@ function placeholderImage(name) {
       <rect fill='url(#g)' width='640' height='400'/>
       <circle cx='530' cy='95' r='80' fill='#f0c8d8' opacity='0.45'/>
       <circle cx='96' cy='298' r='120' fill='#eeb5cb' opacity='0.35'/>
-      <text x='50%' y='47%' text-anchor='middle' font-size='30' fill='#8d173f' font-family='Sora, sans-serif'>Image a fournir</text>
+      <text x='50%' y='47%' text-anchor='middle' font-size='30' fill='#8d173f' font-family='Sora, sans-serif'>Image à fournir</text>
       <text x='50%' y='58%' text-anchor='middle' font-size='21' fill='#704258' font-family='Work Sans, sans-serif'>${name}</text>
     </svg>
   `;
@@ -39,12 +39,12 @@ function resolveDevice() {
 
 function renderDevice(device) {
   if (!device) {
-    titleNode.textContent = "Aucun appareil configure";
+    titleNode.textContent = "Aucun appareil configuré";
     categoryNode.textContent = "Information";
     descriptionNode.textContent = "Ajoutez vos appareils dans devices-data.js.";
     highlightsNode.innerHTML = "";
     imageNode.src = placeholderImage("AUDIBEL");
-    imageNode.alt = "Aucun appareil configure";
+    imageNode.alt = "Aucun appareil configuré";
     return;
   }
 

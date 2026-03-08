@@ -239,7 +239,21 @@ a {
 
 .pricing-intro-card h1 {
   font-size: clamp(1.95rem, 3.6vw, 2.9rem);
-  max-width: 18ch;
+  max-width: 20ch;
+}
+
+.update-pill {
+  margin-top: 2px;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #ead6e0;
+  background: #fff7fb;
+  color: #5d3042;
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .pricing-flow {
@@ -261,7 +275,7 @@ a {
 
 .pricing-module .doc-block {
   margin-top: 0;
-  max-width: 70ch;
+  max-width: none;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -311,6 +325,108 @@ a {
 .pricing-media-app img {
   min-height: clamp(220px, 28vw, 320px);
   object-position: 50% 24%;
+}
+
+.prime-showcase {
+  min-height: clamp(260px, 32vw, 380px);
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  perspective: 1200px;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(202, 36, 95, 0.2) 0%, transparent 42%),
+    radial-gradient(circle at 82% 80%, rgba(109, 14, 47, 0.2) 0%, transparent 46%),
+    linear-gradient(145deg, #fff7fb 0%, #ffffff 100%);
+}
+
+.prime-chip {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid #d7c2cd;
+  background: rgba(255, 255, 255, 0.9);
+  color: #5c1634;
+  font-family: "Sora", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+
+.prime-ring {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999px;
+  border: 1px solid rgba(141, 23, 63, 0.24);
+  pointer-events: none;
+}
+
+.prime-ring-a {
+  width: 78%;
+  aspect-ratio: 1;
+  top: -16%;
+  left: -8%;
+  animation: primeRingRotate 16s linear infinite;
+}
+
+.prime-ring-b {
+  width: 62%;
+  aspect-ratio: 1;
+  right: -10%;
+  bottom: -20%;
+  border-color: rgba(141, 23, 63, 0.18);
+  animation: primeRingRotateReverse 20s linear infinite;
+}
+
+.prime-showcase img.prime-product {
+  position: relative;
+  z-index: 2;
+  width: min(88%, 420px);
+  height: auto;
+  max-height: clamp(220px, 24vw, 310px);
+  min-height: 0;
+  object-fit: contain;
+  transform-origin: center center;
+  transform: translateY(4px) rotateY(-14deg) rotateX(5deg) scale(1.01);
+  filter: drop-shadow(0 20px 30px rgba(62, 11, 33, 0.24));
+  animation: primeFloat3d 7s ease-in-out infinite;
+}
+
+.prime-showcase:hover img.prime-product {
+  transform: translateY(-2px) rotateY(-2deg) rotateX(2deg) scale(1.04);
+}
+
+@keyframes primeFloat3d {
+  0%,
+  100% {
+    transform: translateY(4px) rotateY(-14deg) rotateX(5deg) scale(1.01);
+  }
+  50% {
+    transform: translateY(-8px) rotateY(10deg) rotateX(1deg) scale(1.03);
+  }
+}
+
+@keyframes primeRingRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes primeRingRotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 .procedure-module .procedure-content {
@@ -388,6 +504,42 @@ a {
 .procedure-side .doc-list {
   max-width: none;
   margin: 0;
+}
+
+.contact-cta {
+  padding-top: clamp(28px, 5vw, 44px);
+}
+
+.contact-cta-inner {
+  border: 1px solid #eadde5;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #fff 0%, #fff7fb 100%);
+  padding: clamp(22px, 4vw, 34px);
+  display: grid;
+  gap: 12px;
+}
+
+.trust-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.placeholder-card {
+  border: 1px dashed #d9c6d1;
+  border-radius: 14px;
+  background: #fff;
+  padding: 18px 16px;
+}
+
+.placeholder-card h3 {
+  font-size: 1.06rem;
+  margin-bottom: 6px;
+}
+
+.placeholder-card p {
+  color: var(--muted);
 }
 
 @keyframes mediaFloat {
@@ -723,6 +875,13 @@ a {
   font-size: 1.08rem;
 }
 
+.cta-note {
+  margin-top: 12px;
+  color: #5a4a56;
+  max-width: 60ch;
+  font-size: 0.95rem;
+}
+
 .hero-actions {
   margin-top: 28px;
   display: flex;
@@ -755,6 +914,16 @@ a {
   background: #fff;
   color: var(--primary-strong);
   border: 1px solid var(--line);
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ba2c63;
+  outline-offset: 2px;
 }
 
 .hero-points {
@@ -1504,6 +1673,10 @@ body.device-page {
     grid-template-columns: 1fr 1fr;
   }
 
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-grid,
   .contact-wrap,
   .about-grid,
@@ -1632,6 +1805,10 @@ body.device-page {
     grid-template-columns: 1fr;
   }
 
+  .contact-cta-inner .hero-actions {
+    margin-top: 10px;
+  }
+
   .doc-gallery {
     grid-template-columns: 1fr;
   }
@@ -1647,6 +1824,18 @@ body.device-page {
 
   .carousel-btn {
     display: none;
+  }
+
+  .prime-chip {
+    top: 10px;
+    left: 10px;
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+
+  .prime-showcase img.prime-product {
+    width: min(86%, 340px);
+    max-height: 220px;
   }
 
   .device-slide {
@@ -1678,6 +1867,17 @@ body.device-page {
   .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prime-showcase .prime-ring,
+  .prime-showcase img.prime-product {
+    animation: none;
+  }
+
+  .prime-showcase img.prime-product {
+    transform: none;
   }
 }
 
