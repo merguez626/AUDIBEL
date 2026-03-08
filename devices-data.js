@@ -1,8 +1,8 @@
-window.AUDIBEL_DEVICES = [
+﻿window.AUDIOBEL_DEVICES = [
   {
     id: 1,
     slug: "pure-air-1",
-    name: "AUDIBEL Pure Air 1",
+    name: "AUDIOBEL Pure Air 1",
     category: "Intra discret",
     placement: "interne",
     description: "Format mini, discret et confortable pour un usage quotidien.",
@@ -17,7 +17,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 2,
     slug: "move-pro-2",
-    name: "AUDIBEL Move Pro 2",
+    name: "AUDIOBEL Move Pro 2",
     category: "Contour d'oreille",
     placement: "externe",
     description: "Qualite sonore stable, reduction du bruit et bonne autonomie.",
@@ -32,7 +32,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 3,
     slug: "clarity-3",
-    name: "AUDIBEL Clarity 3",
+    name: "AUDIOBEL Clarity 3",
     category: "Rechargeable",
     placement: "externe",
     description: "Recharge simple et ecoute naturelle pour la conversation.",
@@ -47,7 +47,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 4,
     slug: "connect-4",
-    name: "AUDIBEL Connect 4",
+    name: "AUDIOBEL Connect 4",
     category: "Bluetooth",
     placement: "externe",
     description: "Connexion smartphone pour appels et medias.",
@@ -62,7 +62,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 5,
     slug: "daily-fit-5",
-    name: "AUDIBEL Daily Fit 5",
+    name: "AUDIOBEL Daily Fit 5",
     category: "Confort",
     placement: "externe",
     description: "Concu pour un port prolonge avec maintien stable.",
@@ -77,7 +77,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 6,
     slug: "smart-tone-6",
-    name: "AUDIBEL Smart Tone 6",
+    name: "AUDIOBEL Smart Tone 6",
     category: "Automatique",
     placement: "externe",
     description: "Adaptation automatique du volume selon l'environnement.",
@@ -92,7 +92,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 7,
     slug: "ultra-voice-7",
-    name: "AUDIBEL Ultra Voice 7",
+    name: "AUDIOBEL Ultra Voice 7",
     category: "Conversation",
     placement: "externe",
     description: "Mise en avant de la voix pour les echanges en groupe.",
@@ -107,7 +107,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 8,
     slug: "soft-mini-8",
-    name: "AUDIBEL Soft Mini 8",
+    name: "AUDIOBEL Soft Mini 8",
     category: "Ultra compact",
     placement: "interne",
     description: "Design leger et discret avec performance equilibree.",
@@ -122,7 +122,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 9,
     slug: "prime-9",
-    name: "AUDIBEL Prime 9",
+    name: "AUDIOBEL Prime 9",
     category: "Premium",
     placement: "externe",
     description: "Traitement audio avance pour des details sonores plus fins.",
@@ -137,7 +137,7 @@ window.AUDIBEL_DEVICES = [
   {
     id: 10,
     slug: "elite-10",
-    name: "AUDIBEL Elite 10",
+    name: "AUDIOBEL Elite 10",
     category: "Haut de gamme",
     placement: "externe",
     description: "Experience auditive complete et personnalisation etendue.",
@@ -150,3 +150,4 @@ window.AUDIBEL_DEVICES = [
     image: "image/In-The-Ear-1.png"
   }
 ];
+

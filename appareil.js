@@ -1,4 +1,4 @@
-﻿const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
+﻿const devices = Array.isArray(window.AUDIOBEL_DEVICES) ? window.AUDIOBEL_DEVICES : [];
 
 const titleNode = document.getElementById("device-title");
 const categoryNode = document.getElementById("device-category");
@@ -43,12 +43,12 @@ function renderDevice(device) {
     categoryNode.textContent = "Information";
     descriptionNode.textContent = "Ajoutez vos appareils dans devices-data.js.";
     highlightsNode.innerHTML = "";
-    imageNode.src = placeholderImage("AUDIBEL");
+    imageNode.src = placeholderImage("AUDIOBEL");
     imageNode.alt = "Aucun appareil configuré";
     return;
   }
 
-  document.title = `AUDIBEL | ${device.name}`;
+  document.title = `AUDIOBEL | ${device.name}`;
   titleNode.textContent = device.name;
   categoryNode.textContent = device.category;
   descriptionNode.textContent = device.details;
@@ -90,4 +90,5 @@ function init() {
 }
 
 init();
+
 

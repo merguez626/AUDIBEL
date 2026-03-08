@@ -1,4 +1,4 @@
-﻿const devices = Array.isArray(window.AUDIBEL_DEVICES) ? window.AUDIBEL_DEVICES : [];
+﻿const devices = Array.isArray(window.AUDIOBEL_DEVICES) ? window.AUDIOBEL_DEVICES : [];
 const HOME_CAROUSEL_LIMIT = 4;
 const carouselDevices = devices.slice(0, HOME_CAROUSEL_LIMIT);
 
@@ -321,4 +321,5 @@ function init() {
 }
 
 init();
+
 
