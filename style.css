@@ -285,17 +285,23 @@ main { padding-top: var(--header-height); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 50;
+  isolation: isolate;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--t-base) var(--ease-out);
+}
+/* Blur appliqué via ::before pour ne pas piéger les descendants fixed */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid transparent;
-  transition: border-color var(--t-base) var(--ease-out),
-              background var(--t-base) var(--ease-out);
+  z-index: -1;
+  transition: background var(--t-base) var(--ease-out);
 }
-.site-header.scrolled {
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom-color: var(--border);
-}
+.site-header.scrolled { border-bottom-color: var(--border); }
+.site-header.scrolled::before { background: rgba(255, 255, 255, 0.96); }
 
 .nav-wrap {
   display: flex;
@@ -389,6 +395,7 @@ main { padding-top: var(--header-height); }
   .main-nav {
     position: fixed;
     inset: var(--header-height) 0 0 0;
+    z-index: 49;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
