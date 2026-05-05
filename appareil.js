@@ -1,94 +1,109 @@
-﻿const devices = Array.isArray(window.AUDIOBEL_DEVICES) ? window.AUDIOBEL_DEVICES : [];
+/* ==========================================================================
+   AUDIOBEL · Fiche appareil (appareil.html)
+   ========================================================================== */
 
-const titleNode = document.getElementById("device-title");
-const categoryNode = document.getElementById("device-category");
-const descriptionNode = document.getElementById("device-description");
-const highlightsNode = document.getElementById("device-highlights");
-const imageNode = document.getElementById("device-image");
-const captionNode = document.getElementById("device-caption");
+(function () {
+  "use strict";
 
-function placeholderImage(name) {
-  const svg = `
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'>
-      <defs>
-        <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
-          <stop offset='0%' stop-color='#f4e4ec'/>
-          <stop offset='100%' stop-color='#fff9fc'/>
-        </linearGradient>
-      </defs>
-      <rect fill='url(#g)' width='640' height='400'/>
-      <circle cx='530' cy='95' r='80' fill='#f0c8d8' opacity='0.45'/>
-      <circle cx='96' cy='298' r='120' fill='#eeb5cb' opacity='0.35'/>
-      <text x='50%' y='47%' text-anchor='middle' font-size='30' fill='#8d173f' font-family='Sora, sans-serif'>Image à fournir</text>
-      <text x='50%' y='58%' text-anchor='middle' font-size='21' fill='#704258' font-family='Work Sans, sans-serif'>${name}</text>
-    </svg>
-  `;
+  const devices = Array.isArray(window.AUDIOBEL_DEVICES) ? window.AUDIOBEL_DEVICES : [];
 
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
+  const titleNode = document.getElementById("device-title");
+  const tagNode = document.getElementById("device-category");
+  const descriptionNode = document.getElementById("device-description");
+  const highlightsNode = document.getElementById("device-highlights");
+  const imageNode = document.getElementById("device-image");
+  const placementNode = document.getElementById("device-placement");
+  const breadcrumbNode = document.getElementById("breadcrumb-current");
+  const relatedNode = document.getElementById("related-devices");
 
-function resolveDevice() {
-  if (!devices.length) {
-    return null;
+  const placeholderImage = (name) =>
+    (window.AUDIOBEL && window.AUDIOBEL.placeholderImage)
+      ? window.AUDIOBEL.placeholderImage(name)
+      : "";
+
+  function resolveDevice() {
+    if (!devices.length) return null;
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("slug");
+    return devices.find((d) => d.slug === slug) || devices[0];
   }
 
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("slug");
-  return devices.find((item) => item.slug === slug) || devices[0];
-}
+  function render(device) {
+    if (!device) {
+      if (titleNode) titleNode.textContent = "Aucun appareil configuré";
+      if (descriptionNode) descriptionNode.textContent = "Ajoutez vos appareils dans devices-data.js.";
+      return;
+    }
 
-function renderDevice(device) {
-  if (!device) {
-    titleNode.textContent = "Aucun appareil configuré";
-    categoryNode.textContent = "Information";
-    descriptionNode.textContent = "Ajoutez vos appareils dans devices-data.js.";
-    highlightsNode.innerHTML = "";
-    imageNode.src = placeholderImage("AUDIOBEL");
-    imageNode.alt = "Aucun appareil configuré";
-    return;
+    document.title = `AUDIOBEL | ${device.name}`;
+    if (titleNode) titleNode.textContent = device.name;
+    if (tagNode) tagNode.textContent = device.category;
+    if (descriptionNode) descriptionNode.textContent = device.details || device.description;
+    if (breadcrumbNode) breadcrumbNode.textContent = device.name;
+    if (placementNode) {
+      placementNode.textContent = device.placement === "interne" ? "Intra-auriculaire" : "Contour d'oreille";
+    }
+
+    if (highlightsNode) {
+      highlightsNode.innerHTML = "";
+      (device.highlights || []).forEach((h) => {
+        const li = document.createElement("li");
+        li.textContent = h;
+        highlightsNode.appendChild(li);
+      });
+    }
+
+    if (imageNode) {
+      imageNode.src = device.image;
+      imageNode.alt = device.name;
+      imageNode.addEventListener("error", () => {
+        imageNode.src = placeholderImage(device.name);
+      }, { once: true });
+    }
+
+    renderRelated(device);
   }
 
-  document.title = `AUDIOBEL | ${device.name}`;
-  titleNode.textContent = device.name;
-  categoryNode.textContent = device.category;
-  descriptionNode.textContent = device.details;
-  captionNode.textContent = `${device.name} - ${device.category}`;
-
-  const highlights = Array.isArray(device.highlights) ? device.highlights : [];
-  highlightsNode.innerHTML = "";
-  highlights.forEach((line) => {
-    const item = document.createElement("li");
-    item.textContent = line;
-    highlightsNode.appendChild(item);
-  });
-
-  imageNode.src = device.image;
-  imageNode.alt = device.name;
-  imageNode.addEventListener("error", () => {
-    imageNode.src = placeholderImage(device.name);
-  }, { once: true });
-}
-
-function initReveal() {
-  const observer = new IntersectionObserver((entries, instance) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        instance.unobserve(entry.target);
-      }
+  function renderRelated(current) {
+    if (!relatedNode) return;
+    const others = devices.filter((d) => d.slug !== current.slug).slice(0, 3);
+    const frag = document.createDocumentFragment();
+    others.forEach((d, i) => {
+      const link = document.createElement("a");
+      link.className = "device-slide reveal";
+      link.href = `appareil.html?slug=${encodeURIComponent(d.slug)}`;
+      link.style.setProperty("--delay", `${i * 80}ms`);
+      link.innerHTML = `
+        <article class="device-card">
+          <div class="device-image-wrap">
+            <img src="${d.image}" alt="${d.name}" loading="lazy">
+          </div>
+          <div class="device-content">
+            <div class="device-topline">
+              <h3>${d.name}</h3>
+              <span class="tag">${d.category}</span>
+            </div>
+            <p>${d.description}</p>
+            <span class="device-cta">Voir la fiche</span>
+          </div>
+        </article>`;
+      const img = link.querySelector("img");
+      img.addEventListener("error", () => { img.src = placeholderImage(d.name); }, { once: true });
+      frag.appendChild(link);
     });
-  }, {
-    threshold: 0.12
-  });
+    relatedNode.appendChild(frag);
+    if (window.AUDIOBEL && window.AUDIOBEL.revealNew) {
+      window.AUDIOBEL.revealNew(relatedNode);
+    }
+  }
 
-  document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-}
+  function init() {
+    render(resolveDevice());
+  }
 
-function init() {
-  renderDevice(resolveDevice());
-  initReveal();
-}
-
-init();
-
-
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();

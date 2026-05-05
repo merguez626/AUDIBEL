@@ -1,133 +1,269 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AUDIOBEL à Liège : symptômes de la perte auditive, niveaux en dB et repères pour consulter au bon moment.">
-  <title>AUDIOBEL | L'audition à Liège</title>
+  <meta name="description" content="Comprendre la perte auditive : symptômes, niveaux en dB, repères pour consulter. AUDIOBEL, centre auditif à Liège.">
+  <meta name="theme-color" content="#8d173f">
+  <title>AUDIOBEL · L'audition expliquée</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
   <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
 </head>
 <body data-page="audition">
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="AUDIOBEL - Accueil">
-        <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo" aria-hidden="true">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
+        <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
         <span class="brand-text">AUDIOBEL</span>
       </a>
-      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Navigation principale">
         <a href="index.html" class="nav-link" data-page="home">Accueil</a>
         <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
-        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions auditives</a>
+        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
+        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
         <a href="service.html" class="nav-link" data-page="service">Service</a>
-        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix &amp; remboursement</a>
+        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
         <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
-        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
+      <div class="nav-actions">
+        <a href="tel:+32470206226" class="nav-tel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="tel-num">0470 20 62 26</span>
+        </a>
+        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main class="page-main">
-    <section class="container topic-hero-grid audition-hero">
-      <div class="reveal">
-        <p class="eyebrow">L’AUDITION</p>
-        <h1>6 signes d'une perte auditive à ne pas ignorer</h1>
-        <p class="lead">
-          Les symptômes varient selon la cause et le degré de perte auditive. Si vous vous reconnaissez dans les signes ci-dessous, un bilan auditif en centre permet d'y voir clair rapidement.
-        </p>
-        <a class="btn btn-primary audition-cta" href="tel:+32470206226">Prenez rendez-vous au 0470 20 62 26</a>
-        <p class="cta-note">Les bilans auditifs sont réalisés dans notre centre de Liège, sur rendez-vous.</p>
-      </div>
-      <figure class="media-panel reveal">
-        <img src="image/docx/image3.jpeg" alt="Anatomie de l'oreille expliquée en consultation">
-      </figure>
-    </section>
+  <main>
 
-    <section class="container section">
-      <article class="doc-block reveal">
-        <h2>Signes fréquents</h2>
-        <ul class="doc-list">
-          <li>Difficulté à suivre les conversations, surtout en groupe.</li>
-          <li>Appels téléphoniques moins clairs qu'avant.</li>
-          <li>Impression que les autres n'articulent pas bien.</li>
-          <li>Besoin fréquent de faire répéter votre entourage.</li>
-          <li>Volume de la TV plus élevé que d'habitude.</li>
-        </ul>
-      </article>
-      <article class="doc-block reveal">
-        <h2>Quand consulter sans attendre ?</h2>
-        <ul class="doc-list">
-          <li>Vous avez l'impression d'entendre, mais de moins bien comprendre.</li>
-          <li>Vous évitez les repas de groupe ou les lieux bruyants.</li>
-          <li>Vos proches vous signalent souvent un volume TV trop élevé.</li>
-          <li>Vous faites répéter plusieurs fois dans la même conversation.</li>
-        </ul>
-        <p>Un bilan auditif précoce permet de poser un diagnostic fiable et d'agir avant que la gêne ne s'installe durablement.</p>
-        <p class="section-text">Pour les questions de prix et de remboursement en Belgique, consultez la page <a href="prix-remboursement.html">Prix &amp; remboursement</a>.</p>
-      </article>
-    </section>
-
-    <section class="container section split-block">
-      <article class="doc-block reveal">
-        <h2>Degré de perte auditive</h2>
-        <p>À partir de 35 dB de perte, l'usage d'aides auditives peut être recommandé.</p>
-        <p>En Belgique, la perte auditive touche de nombreuses personnes, en particulier avec l'âge.</p>
-        <p>Un dépistage précoce permet souvent d'améliorer le confort de vie et la compréhension de la parole.</p>
-        <p>Chez AUDIOBEL, nous vous aidons à choisir une solution adaptée, étape par étape.</p>
-        <h3>Comment ?</h3>
-        <ul class="doc-list">
-          <li>Prendre rendez-vous au 0470 20 62 26.</li>
-          <li>Réaliser un bilan ORL/auditif clinique complet en centre.</li>
-          <li>Comprendre les résultats et les options possibles.</li>
-          <li>Essayer une solution pendant 30 jours, sans engagement.</li>
-          <li>Valider les réglages avec un suivi personnalisé.</li>
-        </ul>
-        <ul class="doc-list">
-          <li>Un accompagnement ORL/auditif personnalisé</li>
-          <li>Des experts en audiologie</li>
-          <li>Des technologies discrètes et performantes</li>
-          <li>Un suivi illimité et sans frais supplémentaires</li>
-        </ul>
-      </article>
-      <article class="doc-block reveal">
-        <h3>Repères en dB</h3>
-        <ul class="doc-list">
-          <li>0 – 20 dB = audition normale</li>
-          <li>20 – 39 dB = perte auditive légère. Les conversations à voix basse sont moins évidentes, surtout dans le bruit.</li>
-          <li>40 – 69 dB = perte auditive moyenne. Suivre une conversation de groupe devient difficile.</li>
-          <li>70 – 89 dB = perte auditive sévère. On crie pour s’entendre…</li>
-          <li>90 – 120 dB = perte auditive profonde. Même la voix forte ne suffit plus.</li>
-          <li>&gt; 120 dB = surdité</li>
-        </ul>
-        <div class="doc-gallery compact-gallery">
-          <figure class="doc-image"><img src="image/docx/image6.png" alt="Échelle des niveaux de perte auditive"></figure>
+    <section class="hero hero-compact">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">L'audition</span>
+          <h1 class="mt-4">6 signes d'une perte auditive à <em>ne pas ignorer</em>.</h1>
+          <p class="lead mt-6">
+            Les symptômes varient selon la cause et le degré de perte. Si vous vous reconnaissez dans plusieurs de ces signes, un bilan auditif clinique permet d'y voir clair en 45 minutes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+32470206226">Prendre rendez-vous</a>
+            <a class="btn btn-ghost" href="service.html">Voir le déroulement du bilan</a>
+          </div>
         </div>
-      </article>
+        <div class="hero-visual reveal">
+          <div class="hero-visual-frame">
+            <img src="image/img/close-up-ear.png" alt="Gros plan sur l'oreille d'un homme aux cheveux gris">
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- 6 signes -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Signes courants</span>
+          <h2>Ces situations vous parlent ?</h2>
+          <p class="lead">Un signal isolé n'est pas alarmant. Plusieurs cumulés méritent un bilan.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Conversations en groupe</h3>
+            <p>Difficile de suivre quand plusieurs personnes parlent en même temps, au resto ou en réunion.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </div>
+            <h3>Appels téléphoniques</h3>
+            <p>Les voix au téléphone semblent moins claires qu'avant, surtout sans haut-parleur.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3>« On articule mal »</h3>
+            <p>Vous avez l'impression que les autres parlent moins bien — c'est souvent un signal auditif.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"/><path d="M12 3v18"/></svg>
+            </div>
+            <h3>Demandes de répétition</h3>
+            <p>Vous faites souvent répéter, surtout dans des environnements bruyants.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+            </div>
+            <h3>Volume TV élevé</h3>
+            <p>Vos proches vous demandent régulièrement de baisser le son de la télévision.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2 0 4-2 4-4M21 12c-2 0-4 2-4 4"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Acouphènes</h3>
+            <p>Sifflements, bourdonnements ou tintements persistants méritent une analyse précise.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- dB scale -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split-content reveal">
+            <span class="eyebrow">Repères en décibels</span>
+            <h2>Mesurer pour comprendre</h2>
+            <p class="lead">À partir de <strong>35 dB de perte</strong>, l'usage d'aides auditives peut être recommandé. Plus le diagnostic est précoce, plus l'adaptation est confortable.</p>
+            <p class="muted">L'échelle ci-contre indique les seuils typiques. Un bilan complet précise vos fréquences exactes — un même chiffre dB peut traduire des gênes très différentes selon les fréquences touchées.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+32470206226">Faire un bilan</a>
+              <a class="btn btn-ghost" href="solutions.html">Découvrir les solutions</a>
+            </div>
+          </div>
+
+          <div class="db-scale reveal" aria-label="Échelle des niveaux d'audition">
+            <div class="db-row">
+              <span class="db-range">0 – 20 dB</span>
+              <span class="db-bar"><span style="width: 12%;"></span></span>
+              <span class="db-label">Audition normale</span>
+            </div>
+            <div class="db-row">
+              <span class="db-range">20 – 39 dB</span>
+              <span class="db-bar"><span style="width: 30%;"></span></span>
+              <span class="db-label">Perte légère — voix basses moins évidentes</span>
+            </div>
+            <div class="db-row">
+              <span class="db-range">40 – 69 dB</span>
+              <span class="db-bar"><span style="width: 55%;"></span></span>
+              <span class="db-label">Perte moyenne — conversations de groupe difficiles</span>
+            </div>
+            <div class="db-row">
+              <span class="db-range">70 – 89 dB</span>
+              <span class="db-bar"><span style="width: 75%;"></span></span>
+              <span class="db-label">Perte sévère — il faut élever la voix</span>
+            </div>
+            <div class="db-row">
+              <span class="db-range">90 – 120 dB</span>
+              <span class="db-bar"><span style="width: 92%;"></span></span>
+              <span class="db-label">Perte profonde — la voix forte ne suffit plus</span>
+            </div>
+            <div class="db-row">
+              <span class="db-range">&gt; 120 dB</span>
+              <span class="db-bar"><span style="width: 100%;"></span></span>
+              <span class="db-label">Surdité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quand consulter -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="split split-flip">
+          <div class="split-image reveal">
+            <img src="image/img/dinner-listening.png" alt="Femme attentive à un repas, environnement sonore difficile">
+          </div>
+          <div class="split-content reveal">
+            <span class="eyebrow">Quand consulter</span>
+            <h2>Mieux vaut tôt que tard</h2>
+            <p class="muted">Un dépistage précoce permet d'agir avant que la gêne ne s'installe durablement, et préserve la compréhension de la parole.</p>
+            <ul>
+              <li>Vous entendez, mais comprenez moins bien.</li>
+              <li>Vous évitez les repas de groupe ou les lieux bruyants.</li>
+              <li>Vos proches signalent un volume TV trop élevé.</li>
+              <li>Vous faites répéter plusieurs fois dans une même conversation.</li>
+              <li>Vous fatiguez plus vite à la fin de la journée à cause de l'écoute.</li>
+            </ul>
+            <p class="muted">Pour les questions de prise en charge, voir la page <a href="prix-remboursement.html" class="cta-link">Prix & remboursement</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta-band-soft reveal">
+          <div>
+            <span class="eyebrow">Pas sûr d'être concerné ?</span>
+            <h2 class="mt-4">Un appel suffit pour y voir clair.</h2>
+            <p>En quelques questions, on évalue ensemble si un bilan est utile dans votre situation.</p>
+          </div>
+          <a href="tel:+32470206226" class="btn btn-primary btn-lg">0470 20 62 26</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>AUDIOBEL - Rue du Sart-Tilman 384, 4031 Liège - 0470 20 62 26</p>
-      <a href="index.html">Accueil</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <span class="brand-text">AUDIOBEL</span>
+          </a>
+          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="audition.html">L'audition</a></li>
+            <li><a href="solutions.html">Solutions auditives</a></li>
+            <li><a href="appareils.html">Catalogue des appareils</a></li>
+            <li><a href="service.html">Service & bilan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Infos</h4>
+          <ul>
+            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="apropos.html">À propos du centre</a></li>
+            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Centre AUDIOBEL</h4>
+          <div class="footer-contact-line">
+            <div>
+              <strong>Adresse</strong>
+              Rue du Sart-Tilman 384, 4031 Liège
+            </div>
+          </div>
+          <div class="footer-contact-line" style="margin-top: 14px;">
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+32470206226">0470 20 62 26</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-

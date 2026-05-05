@@ -1,63 +1,149 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catalogue des appareils auditifs AUDIOBEL à Liège : comparez les modèles et demandez un conseil personnalisé.">
-  <title>AUDIOBEL | Catalogue des appareils</title>
+  <meta name="description" content="Catalogue complet des appareils auditifs AUDIOBEL à Liège. Comparez intra-auriculaires, contours d'oreille, modèles rechargeables et Bluetooth.">
+  <meta name="theme-color" content="#8d173f">
+  <title>AUDIOBEL · Catalogue des appareils</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
   <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
 </head>
-<body class="device-page">
-  <header class="page-topbar">
-    <div class="page-topbar-inner">
-      <div class="page-topbar-left">
-        <a href="index.html" class="brand brand-topbar" aria-label="AUDIOBEL - Accueil">
-          <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo" aria-hidden="true">
-          <span class="brand-text">AUDIOBEL</span>
+<body data-page="catalog">
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
+        <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+        <span class="brand-text">AUDIOBEL</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
+        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
+        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
+        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
+        <a href="service.html" class="nav-link" data-page="service">Service</a>
+        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
+        <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+32470206226" class="nav-tel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="tel-num">0470 20 62 26</span>
         </a>
-        <a href="solutions.html" class="back-link">&#8592; Retour aux solutions</a>
+        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
-      <a href="tel:+32470206226" class="btn btn-primary">Prendre rendez-vous</a>
     </div>
   </header>
 
-  <main class="section device-page-main">
-    <section class="container catalog-head reveal">
-      <p class="eyebrow">Catalogue AUDIOBEL</p>
-      <h1>Tous nos appareils auditifs</h1>
-      <p>
-        Consultez la gamme complète et cliquez sur un modèle pour voir sa page détaillée.
-      </p>
-      <p class="section-text">Besoin d'aide pour choisir ? Notre équipe vous oriente selon votre perte auditive, votre confort et votre budget.</p>
-      <div class="catalog-controls" aria-label="Tri des appareils">
-        <button type="button" class="catalog-filter active" data-filter="all">Tous</button>
-        <button type="button" class="catalog-filter" data-filter="interne">Interne</button>
-        <button type="button" class="catalog-filter" data-filter="externe">Externe</button>
-      </div>
-      <p id="catalog-count" class="catalog-count"></p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="tel:+32470206226">Parler à un audiologiste</a>
-        <a class="btn btn-ghost" href="prix-remboursement.html">Voir les remboursements</a>
+  <main>
+
+    <section class="hero hero-compact">
+      <div class="container">
+        <div class="reveal" style="max-width: 60ch;">
+          <span class="eyebrow">Catalogue</span>
+          <h1 class="mt-4">Tous nos appareils, <em>en un coup d'œil</em>.</h1>
+          <p class="lead mt-6">
+            Découvrez la gamme complète. Cliquez sur un modèle pour sa fiche détaillée. Besoin d'un conseil ? Notre équipe vous oriente selon votre perte auditive, votre confort et votre budget.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+32470206226">Parler à un audiologiste</a>
+            <a class="btn btn-ghost" href="prix-remboursement.html">Voir les remboursements</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container">
-      <div id="devices-catalog-grid" class="devices-catalog-grid"></div>
+    <section class="section">
+      <div class="container">
+        <div class="catalog-filters reveal" aria-label="Filtres du catalogue">
+          <span class="filter-label">Filtrer par</span>
+          <button type="button" class="filter-chip active" data-filter="all">Tous les modèles</button>
+          <button type="button" class="filter-chip" data-filter="interne">Intra-auriculaire</button>
+          <button type="button" class="filter-chip" data-filter="externe">Contour d'oreille</button>
+        </div>
+        <p id="catalog-count" class="catalog-meta reveal"></p>
+
+        <div id="devices-catalog-grid" class="catalog-grid"></div>
+      </div>
     </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta-band-soft reveal">
+          <div>
+            <span class="eyebrow">Aide au choix</span>
+            <h2 class="mt-4">Le bon modèle dépend du contexte, pas du catalogue.</h2>
+            <p>Décrivez-nous votre quotidien (réunions, restos, sport, télévision…). Nous orientons vers les 2 ou 3 modèles les plus pertinents pour vous.</p>
+          </div>
+          <a href="tel:+32470206226" class="btn btn-primary btn-lg">0470 20 62 26</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <span class="brand-text">AUDIOBEL</span>
+          </a>
+          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="audition.html">L'audition</a></li>
+            <li><a href="solutions.html">Solutions auditives</a></li>
+            <li><a href="appareils.html">Catalogue des appareils</a></li>
+            <li><a href="service.html">Service & bilan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Infos</h4>
+          <ul>
+            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="apropos.html">À propos du centre</a></li>
+            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Centre AUDIOBEL</h4>
+          <div class="footer-contact-line">
+            <div>
+              <strong>Adresse</strong>
+              Rue du Sart-Tilman 384, 4031 Liège
+            </div>
+          </div>
+          <div class="footer-contact-line" style="margin-top: 14px;">
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+32470206226">0470 20 62 26</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="devices-data.js"></script>
-  <script src="appareils.js"></script>
+  <script src="script.js" defer></script>
+  <script src="appareils.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
