@@ -36,6 +36,7 @@
   }
 
   /* ---------- Mobile menu ---------- */
+  const MOBILE_BP = 980;
   function initMenu() {
     const toggle = $(".menu-toggle");
     const nav = $(".main-nav");
@@ -45,13 +46,13 @@
       nav.classList.remove("open");
       toggle.classList.remove("open");
       toggle.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
+      document.body.classList.remove("menu-open");
     };
     const open = () => {
       nav.classList.add("open");
       toggle.classList.add("open");
       toggle.setAttribute("aria-expanded", "true");
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("menu-open");
     };
 
     toggle.addEventListener("click", () => {
@@ -59,11 +60,15 @@
     });
     $$(".nav-link", nav).forEach((link) => {
       link.addEventListener("click", () => {
-        if (window.innerWidth <= 820) close();
+        if (window.innerWidth <= MOBILE_BP) close();
       });
     });
+    let resizeRaf;
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 820) close();
+      cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(() => {
+        if (window.innerWidth > MOBILE_BP) close();
+      });
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") close();
