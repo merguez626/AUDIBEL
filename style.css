@@ -446,10 +446,16 @@ main { padding-top: var(--header-height); }
 }
 .hero h1 em {
   font-style: normal;
-  background: linear-gradient(120deg, var(--brand) 0%, var(--brand-500) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--brand);
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero h1 em {
+    background: linear-gradient(120deg, var(--brand) 0%, var(--brand-500) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 .hero .lead { margin-top: var(--space-5); }
 .hero-actions {
@@ -1701,4 +1707,51 @@ table.data-table tbody tr:hover td { background: var(--brand-50); }
   .feature-card:hover { transform: none; box-shadow: none; }
   .btn:hover { transform: none; }
   .hero-visual-frame:hover img { transform: none; }
+}
+
+/* Tables → empilage en cartes sur mobile (évite le scroll horizontal) */
+@media (max-width: 600px) {
+  .table-wrap { overflow: hidden; }
+  table.data-table,
+  table.data-table tbody,
+  table.data-table tr,
+  table.data-table td { display: block; width: 100%; }
+  table.data-table thead { display: none; }
+  table.data-table tr {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    gap: 6px;
+  }
+  table.data-table tr:last-child { border-bottom: 0; }
+  table.data-table td {
+    padding: 0;
+    border: 0;
+    color: var(--text-muted);
+    font-size: var(--fs-sm);
+  }
+  table.data-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--text-subtle);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  table.data-table td:first-child::before { display: none; }
+  table.data-table td:first-child {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-base);
+    color: var(--ink-900);
+    margin-bottom: 6px;
+  }
+  table.data-table tbody tr:hover td { background: transparent; }
+}
+
+/* Hero plus aéré sur mobile (plus de respiration sous le header) */
+@media (max-width: 720px) {
+  .hero, .hero-compact { padding-block: clamp(48px, 7vw, 72px); }
 }
