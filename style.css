@@ -77,7 +77,7 @@
   --container: min(1200px, calc(100% - 48px));
   --container-narrow: min(880px, calc(100% - 48px));
   --container-wide: min(1320px, calc(100% - 48px));
-  --header-height: 96px;
+  --header-height: 76px;
 
   /* Radius */
   --r-1: 6px;
@@ -323,14 +323,13 @@ main { padding-top: var(--header-height); }
 }
 .brand-logo {
   width: auto;
-  height: 84px;
+  height: 48px;
   object-fit: contain;
-  margin: -10px 0;
 }
 .brand-text { font-size: 1.05rem; }
-.site-footer .brand-logo { height: 56px; margin: 0; }
+.site-footer .brand-logo { height: 40px; }
 @media (max-width: 720px) {
-  .brand-logo { height: 64px; }
+  .brand-logo { height: 40px; }
 }
 
 .main-nav {
@@ -1563,7 +1562,7 @@ table.data-table tbody tr:hover td { background: var(--brand-50); }
 
 /* Tablette / petit laptop */
 @media (max-width: 900px) {
-  :root { --header-height: 80px; }
+  :root { --header-height: 68px; }
   .hero-visual {
     max-width: min(560px, 100%);
     margin-inline: auto;
