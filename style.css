@@ -321,8 +321,12 @@ main { padding-top: var(--header-height); }
   color: var(--ink-900);
   font-size: 1rem;
 }
-.brand-logo { width: 44px; height: 44px; object-fit: contain; }
+.brand-logo { width: auto; height: 56px; object-fit: contain; }
 .brand-text { font-size: 1.05rem; }
+.site-footer .brand-logo { height: 44px; }
+@media (max-width: 720px) {
+  .brand-logo { height: 48px; }
+}
 
 .main-nav {
   display: flex;
