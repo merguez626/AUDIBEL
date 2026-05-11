@@ -205,33 +205,52 @@
       </div>
     </section>
 
-    <!-- Devices preview -->
+    <!-- 3 types d'appareils -->
     <section class="section section-soft">
       <div class="container">
-        <div class="flex-between" style="margin-bottom: var(--space-6);">
-          <div class="reveal" style="max-width: 52ch;">
-            <span class="eyebrow">Aperçu modèles</span>
-            <h2 style="font-size: var(--fs-3xl); margin-top: 12px;">Quelques appareils disponibles</h2>
-          </div>
-          <div class="carousel-controls reveal">
-            <button class="carousel-btn" data-carousel="prev" aria-label="Précédent">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-            </button>
-            <button class="carousel-btn" data-carousel="next" aria-label="Suivant">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-            </button>
-          </div>
+        <div class="section-header reveal">
+          <span class="eyebrow">Les formes d'appareils</span>
+          <h2>Trois familles, un choix adapté</h2>
+          <p class="lead">Au-delà des marques, tous les appareils auditifs appartiennent à l'un de ces trois formats. Le bon choix dépend de votre audition et de votre quotidien.</p>
         </div>
 
-        <div class="carousel-shell reveal">
-          <div id="devices-carousel" class="devices-carousel" aria-live="polite">
-            <div id="devices-carousel-track" class="devices-carousel-track"></div>
-          </div>
-          <div id="carousel-dots" class="carousel-dots"></div>
+        <div class="types-teaser">
+          <a class="type-teaser-card reveal" href="appareils.html#intra">
+            <div class="type-teaser-media">
+              <img src="image/img/appareil/intra-product.png" alt="Appareil intra-auriculaire" loading="lazy">
+            </div>
+            <div class="type-teaser-body">
+              <h3>Intra-auriculaire</h3>
+              <p>L'appareil dans le conduit, quasi invisible. Pour les pertes légères à modérées.</p>
+              <span class="cta-link">En savoir plus →</span>
+            </div>
+          </a>
+
+          <a class="type-teaser-card reveal" href="appareils.html#ric">
+            <div class="type-teaser-media">
+              <img src="image/img/appareil/ric-product.png" alt="Mini-contour à écouteur déporté (RIC)" loading="lazy">
+            </div>
+            <div class="type-teaser-body">
+              <h3>Contour RIC</h3>
+              <p>Le boîtier derrière, l'écouteur dans le conduit. Le format le plus polyvalent.</p>
+              <span class="cta-link">En savoir plus →</span>
+            </div>
+          </a>
+
+          <a class="type-teaser-card reveal" href="appareils.html#bte">
+            <div class="type-teaser-media">
+              <img src="image/img/appareil/bte-product.png" alt="Contour d'oreille classique (BTE)" loading="lazy">
+            </div>
+            <div class="type-teaser-body">
+              <h3>Contour BTE</h3>
+              <p>Le contour traditionnel, puissant et robuste, pour les pertes sévères à profondes.</p>
+              <span class="cta-link">En savoir plus →</span>
+            </div>
+          </a>
         </div>
 
         <div class="center-actions">
-          <a class="btn btn-primary" href="appareils.html">Voir tous les appareils</a>
+          <a class="btn btn-primary" href="appareils.html">Comparer les 3 types</a>
         </div>
       </div>
     </section>
@@ -310,7 +329,6 @@
     </div>
   </footer>
 
-  <script src="devices-data.js"></script>
   <script src="script.js" defer></script>
 </body>
 </html>
