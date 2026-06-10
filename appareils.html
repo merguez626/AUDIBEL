@@ -9,16 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
 </head>
 <body data-page="catalog">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="image/logo.png" alt="" class="brand-logo" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
         <span class="brand-text">AUDIOBEL</span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
@@ -40,9 +41,10 @@
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main>
+  <main id="contenu">
 
     <section class="hero hero-compact">
       <div class="container">
@@ -65,9 +67,9 @@
       <div class="container">
         <div class="type-block">
           <div class="type-visual reveal">
-            <img class="type-worn" src="image/img/appareil/intra-worn.png" alt="Appareil intra-auriculaire porté dans l'oreille d'une personne âgée">
+            <img class="type-worn" src="assets/img/appareil/intra-worn.png" alt="Appareil intra-auriculaire porté dans l'oreille d'une personne âgée">
             <figure class="type-product-card">
-              <img src="image/img/appareil/intra-product.png" alt="Appareil auditif intra-auriculaire">
+              <img src="assets/img/appareil/intra-product.png" alt="Appareil auditif intra-auriculaire">
             </figure>
           </div>
           <div class="type-content reveal">
@@ -113,9 +115,9 @@
       <div class="container">
         <div class="type-block flip">
           <div class="type-visual reveal">
-            <img class="type-worn" src="image/img/appareil/ric-worn.png" alt="Mini-contour à écouteur déporté porté derrière l'oreille">
+            <img class="type-worn" src="assets/img/appareil/ric-worn.png" alt="Mini-contour à écouteur déporté porté derrière l'oreille">
             <figure class="type-product-card">
-              <img src="image/img/appareil/ric-product.png" alt="Mini-contour RIC avec écouteur déporté">
+              <img src="assets/img/appareil/ric-product.png" alt="Mini-contour RIC avec écouteur déporté">
             </figure>
           </div>
           <div class="type-content reveal">
@@ -161,9 +163,9 @@
       <div class="container">
         <div class="type-block">
           <div class="type-visual reveal">
-            <img class="type-worn" src="image/img/appareil/bte-worn.png" alt="Contour d'oreille classique BTE porté avec tube et embout sur mesure">
+            <img class="type-worn" src="assets/img/appareil/bte-worn.png" alt="Contour d'oreille classique BTE porté avec tube et embout sur mesure">
             <figure class="type-product-card">
-              <img src="image/img/appareil/bte-product.png" alt="Contour d'oreille classique BTE avec tube et embout">
+              <img src="assets/img/appareil/bte-product.png" alt="Contour d'oreille classique BTE avec tube et embout">
             </figure>
           </div>
           <div class="type-content reveal">
@@ -250,7 +252,7 @@
         <div class="cta-band reveal">
           <div class="cta-band-inner">
             <div>
-              <span class="eyebrow" style="color: rgba(255,255,255,0.8);">Décision sereine</span>
+              <span class="eyebrow">Décision sereine</span>
               <h2 class="mt-4">Le bon format se découvre en cabine, pas en ligne.</h2>
               <p>Bilan auditif complet, essai 30 jours, et notre conseil indépendant pour valider le bon choix.</p>
             </div>
@@ -270,7 +272,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand">
-            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
             <span class="brand-text">AUDIOBEL</span>
           </a>
           <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
@@ -281,15 +283,15 @@
             <li><a href="audition.html">L'audition</a></li>
             <li><a href="solutions.html">Solutions auditives</a></li>
             <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service & bilan</a></li>
+            <li><a href="service.html">Service &amp; bilan</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Infos</h4>
           <ul>
-            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
             <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact & accès</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
             <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
@@ -320,6 +322,10 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <button class="back-to-top" aria-label="Revenir en haut de page">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

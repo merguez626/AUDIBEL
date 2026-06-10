@@ -1,5 +1,7 @@
 /* ==========================================================================
-   AUDIOBEL · script global (header sticky, nav mobile, reveal-on-scroll)
+   AUDIOBEL — script global
+   Header sticky, progression de lecture, nav mobile, lien actif,
+   reveal-on-scroll, retour en haut, année du footer.
    ========================================================================== */
 
 (function () {
@@ -7,36 +9,52 @@
 
   const $ = (s, ctx = document) => ctx.querySelector(s);
   const $$ = (s, ctx = document) => [...ctx.querySelectorAll(s)];
-  const onIdle = (cb) => (window.requestIdleCallback ? requestIdleCallback(cb) : setTimeout(cb, 1));
 
-  /* ---------- Header sticky shadow ---------- */
-  function initHeader() {
+  /* ---------- Header sticky + progression + back-to-top ---------- */
+  function initScrollUI() {
     const header = $(".site-header");
-    if (!header) return;
+    const progress = $(".scroll-progress");
+    const backToTop = $(".back-to-top");
     let ticking = false;
+
     const update = () => {
-      header.classList.toggle("scrolled", window.scrollY > 12);
+      const y = window.scrollY;
+      if (header) header.classList.toggle("scrolled", y > 12);
+      if (progress) {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
+      }
+      if (backToTop) backToTop.classList.toggle("visible", y > 600);
       ticking = false;
     };
+
     update();
     window.addEventListener("scroll", () => {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(update);
     }, { passive: true });
+
+    if (backToTop) {
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
   }
 
-  /* ---------- Active nav link from data-page ---------- */
+  /* ---------- Lien actif selon data-page ---------- */
   function initActiveNav() {
     const page = document.body.dataset.page;
     if (!page) return;
     $$(".nav-link").forEach((link) => {
-      link.classList.toggle("active", link.dataset.page === page);
+      const active = link.dataset.page === page;
+      link.classList.toggle("active", active);
+      if (active) link.setAttribute("aria-current", "page");
     });
   }
 
-  /* ---------- Mobile menu ---------- */
-  const MOBILE_BP = 980;
+  /* ---------- Menu mobile ---------- */
+  const MOBILE_BP = 1140;
   function initMenu() {
     const toggle = $(".menu-toggle");
     const nav = $(".main-nav");
@@ -58,11 +76,19 @@
     toggle.addEventListener("click", () => {
       nav.classList.contains("open") ? close() : open();
     });
+
     $$(".nav-link", nav).forEach((link) => {
       link.addEventListener("click", () => {
         if (window.innerWidth <= MOBILE_BP) close();
       });
     });
+
+    document.addEventListener("click", (event) => {
+      if (!nav.classList.contains("open")) return;
+      if (nav.contains(event.target) || toggle.contains(event.target)) return;
+      close();
+    });
+
     let resizeRaf;
     window.addEventListener("resize", () => {
       cancelAnimationFrame(resizeRaf);
@@ -70,15 +96,22 @@
         if (window.innerWidth > MOBILE_BP) close();
       });
     });
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") close();
     });
   }
 
-  /* ---------- Reveal on scroll ---------- */
+  /* ---------- Reveal on scroll (cascade) ---------- */
   function initReveal() {
     const nodes = $$(".reveal");
     if (!nodes.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+      nodes.forEach((n) => n.classList.add("visible"));
+      return;
+    }
+
     const obs = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -87,29 +120,29 @@
         }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
     nodes.forEach((n, i) => {
       if (!n.style.getPropertyValue("--delay")) {
-        n.style.setProperty("--delay", `${Math.min(i * 60, 240)}ms`);
+        n.style.setProperty("--delay", `${Math.min((i % 4) * 70, 240)}ms`);
       }
       obs.observe(n);
     });
   }
 
-  /* ---------- Year in footer ---------- */
+  /* ---------- Année du footer ---------- */
   function initFooterYear() {
-    const el = $("[data-current-year]");
-    if (el) el.textContent = String(new Date().getFullYear());
+    $$("[data-current-year]").forEach((el) => {
+      el.textContent = String(new Date().getFullYear());
+    });
   }
 
   /* ---------- Boot ---------- */
   function init() {
-    initHeader();
+    initScrollUI();
     initActiveNav();
     initMenu();
     initFooterYear();
-    onIdle(() => {
-      initReveal();
-    });
+    initReveal();
   }
 
   if (document.readyState === "loading") {

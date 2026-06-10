@@ -9,16 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
 </head>
 <body data-page="solutions">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="image/logo.png" alt="" class="brand-logo" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
         <span class="brand-text">AUDIOBEL</span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
@@ -40,9 +41,10 @@
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main>
+  <main id="contenu">
 
     <section class="hero hero-compact">
       <div class="container hero-grid">
@@ -59,7 +61,7 @@
         </div>
         <div class="hero-visual reveal">
           <div class="hero-visual-frame">
-            <img src="image/img/cases-flatlay.png" alt="Trois boîtiers d'appareils auditifs sur lin crème avec une pivoine bordeaux">
+            <img src="assets/img/cases-flatlay.png" alt="Trois boîtiers d'appareils auditifs sur lin crème avec une pivoine bordeaux">
           </div>
         </div>
       </div>
@@ -138,7 +140,7 @@
             </ul>
           </div>
           <div class="split-image reveal">
-            <img src="image/img/bluetooth-app.png" alt="Mains tenant un smartphone avec une interface de pilotage audio">
+            <img src="assets/img/bluetooth-app.png" alt="Mains tenant un smartphone avec une interface de pilotage audio">
           </div>
         </div>
       </div>
@@ -149,7 +151,7 @@
       <div class="container">
         <div class="split split-flip">
           <div class="split-image reveal">
-            <img src="image/img/charging-case.png" alt="Boîtier de recharge minimaliste avec témoin lumineux bordeaux">
+            <img src="assets/img/charging-case.png" alt="Boîtier de recharge minimaliste avec témoin lumineux bordeaux">
           </div>
           <div class="split-content reveal">
             <span class="eyebrow">Batteries rechargeables</span>
@@ -218,7 +220,7 @@
         <div class="types-teaser">
           <a class="type-teaser-card reveal" href="appareils.html#intra">
             <div class="type-teaser-media">
-              <img src="image/img/appareil/intra-product.png" alt="Appareil intra-auriculaire" loading="lazy">
+              <img src="assets/img/appareil/intra-product.png" alt="Appareil intra-auriculaire" loading="lazy">
             </div>
             <div class="type-teaser-body">
               <h3>Intra-auriculaire</h3>
@@ -229,7 +231,7 @@
 
           <a class="type-teaser-card reveal" href="appareils.html#ric">
             <div class="type-teaser-media">
-              <img src="image/img/appareil/ric-product.png" alt="Mini-contour à écouteur déporté (RIC)" loading="lazy">
+              <img src="assets/img/appareil/ric-product.png" alt="Mini-contour à écouteur déporté (RIC)" loading="lazy">
             </div>
             <div class="type-teaser-body">
               <h3>Contour RIC</h3>
@@ -240,7 +242,7 @@
 
           <a class="type-teaser-card reveal" href="appareils.html#bte">
             <div class="type-teaser-media">
-              <img src="image/img/appareil/bte-product.png" alt="Contour d'oreille classique (BTE)" loading="lazy">
+              <img src="assets/img/appareil/bte-product.png" alt="Contour d'oreille classique (BTE)" loading="lazy">
             </div>
             <div class="type-teaser-body">
               <h3>Contour BTE</h3>
@@ -261,7 +263,7 @@
         <div class="cta-band reveal">
           <div class="cta-band-inner">
             <div>
-              <span class="eyebrow" style="color: rgba(255,255,255,0.8);">Hésitation ?</span>
+              <span class="eyebrow">Hésitation ?</span>
               <h2 class="mt-4">Comparez avec un audiologiste, gratuitement.</h2>
               <p>Chaque cas est différent. Décrivez-nous le vôtre, on vous oriente vers la bonne famille de solutions.</p>
             </div>
@@ -281,7 +283,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand">
-            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
             <span class="brand-text">AUDIOBEL</span>
           </a>
           <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
@@ -291,16 +293,16 @@
           <ul>
             <li><a href="audition.html">L'audition</a></li>
             <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Catalogue des appareils</a></li>
-            <li><a href="service.html">Service & bilan</a></li>
+            <li><a href="appareils.html">Types d'appareils</a></li>
+            <li><a href="service.html">Service &amp; bilan</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Infos</h4>
           <ul>
-            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
             <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact & accès</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
             <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
@@ -331,6 +333,10 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <button class="back-to-top" aria-label="Revenir en haut de page">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

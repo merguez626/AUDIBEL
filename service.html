@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bilan auditif clinique en centre à Liège : 45 minutes avec un audiologiste diplômé, mesures fiables et accompagnement personnalisé. AUDIOBEL.">
   <meta name="theme-color" content="#8d173f">
-  <title>AUDIOBEL · Service & bilan auditif</title>
+  <title>AUDIOBEL · Service &amp; bilan auditif</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
 </head>
 <body data-page="service">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="image/logo.png" alt="" class="brand-logo" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
         <span class="brand-text">AUDIOBEL</span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
@@ -40,9 +41,10 @@
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main>
+  <main id="contenu">
 
     <section class="hero hero-compact">
       <div class="container hero-grid">
@@ -59,7 +61,7 @@
         </div>
         <div class="hero-visual reveal">
           <div class="hero-visual-frame">
-            <img src="image/img/audiologist-booth.png" alt="Audiologiste à la console d'audiométrie devant une cabine insonorisée">
+            <img src="assets/img/audiologist-booth.png" alt="Audiologiste à la console d'audiométrie devant une cabine insonorisée">
           </div>
         </div>
       </div>
@@ -82,7 +84,7 @@
             <a href="tel:+32470206226" class="btn btn-primary mt-4">Faire un bilan</a>
           </div>
           <div class="split-image reveal">
-            <img src="image/img/consultation.png" alt="Audiologiste expliquant les résultats à une patiente">
+            <img src="assets/img/consultation.png" alt="Audiologiste expliquant les résultats à une patiente">
           </div>
         </div>
       </div>
@@ -141,7 +143,7 @@
           </table>
         </div>
         <p class="table-note reveal">
-          <strong>À l'issue du bilan :</strong> vous repartez avec un audiogramme commenté, un avis professionnel clair et — si pertinent — une proposition de solution adaptée à essayer pendant 30 jours.
+          <strong>À l'issue du bilan :</strong>&nbsp;vous repartez avec un audiogramme commenté, un avis professionnel clair et — si pertinent — une proposition de solution adaptée à essayer pendant 30 jours.
         </p>
       </div>
     </section>
@@ -205,7 +207,7 @@
         <div class="cta-band reveal">
           <div class="cta-band-inner">
             <div>
-              <span class="eyebrow" style="color: rgba(255,255,255,0.8);">Premier rendez-vous</span>
+              <span class="eyebrow">Premier rendez-vous</span>
               <h2 class="mt-4">Votre audition mérite mieux qu'un dépistage rapide.</h2>
               <p>Réservez un créneau de bilan clinique complet. Aucune obligation d'achat, aucune pression.</p>
             </div>
@@ -225,7 +227,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand">
-            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
             <span class="brand-text">AUDIOBEL</span>
           </a>
           <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
@@ -235,16 +237,16 @@
           <ul>
             <li><a href="audition.html">L'audition</a></li>
             <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Catalogue des appareils</a></li>
-            <li><a href="service.html">Service & bilan</a></li>
+            <li><a href="appareils.html">Types d'appareils</a></li>
+            <li><a href="service.html">Service &amp; bilan</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Infos</h4>
           <ul>
-            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
             <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact & accès</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
             <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
@@ -275,6 +277,10 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <button class="back-to-top" aria-label="Revenir en haut de page">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

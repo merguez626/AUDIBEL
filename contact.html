@@ -9,16 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="image/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="image/logo-nav2-transparent.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
 </head>
 <body data-page="contact">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="image/logo.png" alt="" class="brand-logo" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
         <span class="brand-text">AUDIOBEL</span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
@@ -40,9 +41,10 @@
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
-  <main>
+  <main id="contenu">
 
     <section class="hero hero-compact">
       <div class="container">
@@ -57,7 +59,7 @@
               Appeler le 0470 20 62 26
               <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
-            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Rue+du+Sart-Tilman+384,+4031+Li%C3%A8ge,+Belgique" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+du+Sart-Tilman+384,+4031+Li%C3%A8ge,+Belgique" target="_blank" rel="noopener">Itinéraire Google Maps</a>
           </div>
         </div>
       </div>
@@ -121,7 +123,7 @@
 
           <div class="contact-map reveal">
             <iframe
-              src="https://www.google.com/maps?q=Rue+du+Sart-Tilman+384,+4031+Li%C3%A8ge,+Belgique&output=embed"
+              src="https://www.google.com/maps?q=Rue+du+Sart-Tilman+384,+4031+Li%C3%A8ge,+Belgique&amp;output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="Plan d'accès au centre AUDIOBEL, rue du Sart-Tilman 384, 4031 Liège"
@@ -186,7 +188,7 @@
         <div class="cta-band reveal">
           <div class="cta-band-inner">
             <div>
-              <span class="eyebrow" style="color: rgba(255,255,255,0.8);">Premier contact</span>
+              <span class="eyebrow">Premier contact</span>
               <h2 class="mt-4">Un appel, un rendez-vous, un centre près de chez vous.</h2>
               <p>Réservez votre créneau au téléphone. Échange clair, conseil sans engagement.</p>
             </div>
@@ -206,7 +208,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand">
-            <img src="image/logo-nav2-transparent.png" alt="" class="brand-logo">
+            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
             <span class="brand-text">AUDIOBEL</span>
           </a>
           <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
@@ -217,15 +219,15 @@
             <li><a href="audition.html">L'audition</a></li>
             <li><a href="solutions.html">Solutions auditives</a></li>
             <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service & bilan</a></li>
+            <li><a href="service.html">Service &amp; bilan</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Infos</h4>
           <ul>
-            <li><a href="prix-remboursement.html">Prix & remboursement</a></li>
+            <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
             <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact & accès</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
             <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
@@ -256,6 +258,10 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <button class="back-to-top" aria-label="Revenir en haut de page">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
