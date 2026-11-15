@@ -1,277 +1,320 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-BE" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Comprendre la perte auditive : symptômes, niveaux en dB, repères pour consulter. AUDIOBEL, centre auditif à Liège.">
+  <title>Perte auditive : les 6 signes à ne pas ignorer · AUDIOBEL Liège</title>
+  <meta name="description" content="Conversations en groupe, téléphone, TV trop forte, acouphènes : reconnaître une perte auditive, comprendre les décibels et savoir quand consulter. Auto-évaluation en 1 minute.">
   <meta name="theme-color" content="#8d173f">
-  <title>AUDIOBEL · L'audition expliquée</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
 </head>
-<body data-page="audition">
+<body>
+<!-- @header -->
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
-        <span class="brand-text">AUDIOBEL</span>
-      </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
-        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
-        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
-        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
-        <a href="service.html" class="nav-link" data-page="service">Service</a>
-        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
-        <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
-        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="tel:+32470206226" class="nav-tel">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          <span class="tel-num">0470 20 62 26</span>
-        </a>
-        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="utility">
+    <div class="container">
+      <div class="utility-info">
+        <span class="open-status" data-open-status>Lun–ven 9h–18h · sam 9h–13h</span>
+        <span class="addr">Rue du Sart-Tilman 384, 4031 Liège</span>
+        <a class="addr" href="tel:+32470206226">0470 20 62 26</a>
+      </div>
+      <div class="text-size" role="group" aria-label="Taille du texte">
+        <button type="button" data-text-size="md" aria-pressed="true" aria-label="Texte normal">A</button>
+        <button type="button" data-text-size="lg" aria-pressed="false" aria-label="Texte agrandi">A+</button>
       </div>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL, accueil">
+        <img src="assets/img/logo.webp" alt="" width="46" height="46">
+        <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <a href="audition.html" aria-current="page">Votre audition</a>
+        <a href="appareils.html">Appareils</a>
+        <a href="service.html">Bilan &amp; suivi</a>
+        <a href="prix-remboursement.html">Prix &amp; remboursement</a>
+        <a href="apropos.html">Le centre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+32470206226" class="header-phone" aria-label="Appeler le 0470 20 62 26">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="num">0470 20 62 26</span>
+        </a>
+        <a href="rendez-vous.html" class="btn">Prendre rendez-vous</a>
+        <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
+<!-- /@header -->
 
   <main id="contenu">
-
-    <section class="hero hero-compact">
-      <div class="container hero-grid">
+    <section class="page-hero page-hero--media">
+      <div class="container">
         <div class="reveal">
-          <span class="eyebrow">L'audition</span>
-          <h1 class="mt-4">6 signes d'une perte auditive à <em>ne pas ignorer</em>.</h1>
-          <p class="lead mt-6">
-            Les symptômes varient selon la cause et le degré de perte. Si vous vous reconnaissez dans plusieurs de ces signes, un bilan auditif clinique permet d'y voir clair en 45 minutes.
-          </p>
+          <span class="kicker">Votre audition</span>
+          <h1>6 signes d'une perte auditive <em>à ne pas ignorer</em>.</h1>
+          <p class="lead">Les symptômes varient selon la cause et le degré de perte. Si vous vous reconnaissez dans plusieurs de ces signes, un bilan auditif clinique permet d'y voir clair en 45 minutes.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+32470206226">Prendre rendez-vous</a>
-            <a class="btn btn-ghost" href="service.html">Voir le déroulement du bilan</a>
+            <a class="btn btn--lg" href="#auto-evaluation">Faire le point en 1 minute</a>
+            <a class="btn btn--lg btn--outline" href="service.html">Le déroulement du bilan</a>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="hero-visual-frame">
-            <img src="assets/img/hand-to-ear.png" alt="Homme âgé portant la main à son oreille pour mieux entendre">
-          </div>
+        <div class="page-hero-media reveal">
+          <img src="assets/img/hand-to-ear.webp" width="1120" height="1400" alt="Homme âgé portant la main à son oreille pour mieux entendre" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <!-- 6 signes -->
-    <section class="section section-soft">
+    <nav class="subnav" aria-label="Sur cette page">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Signes courants</span>
+        <ul>
+          <li><a href="#auto-evaluation">Les 6 signes</a></li>
+          <li><a href="#decibels">Repères en décibels</a></li>
+          <li><a href="#quand-consulter">Quand consulter</a></li>
+          <li><a href="#acouphenes">Acouphènes</a></li>
+          <li><a href="#proche">Aider un proche</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 6 signes : auto-évaluation -->
+    <section class="section" id="auto-evaluation">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Signes courants</span>
           <h2>Ces situations vous parlent ?</h2>
-          <p class="lead">Un signal isolé n'est pas alarmant. Plusieurs cumulés méritent un bilan.</p>
+          <p class="lead">Un signal isolé n'est pas alarmant. Plusieurs cumulés méritent un bilan. Cochez ce que vous vivez régulièrement.</p>
         </div>
 
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3>Conversations en groupe</h3>
-            <p>Difficile de suivre quand plusieurs personnes parlent en même temps, au resto ou en réunion.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-            </div>
-            <h3>Appels téléphoniques</h3>
-            <p>Les voix au téléphone semblent moins claires qu'avant, surtout sans haut-parleur.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
-            </div>
-            <h3>« On articule mal »</h3>
-            <p>Vous avez l'impression que les autres parlent moins bien — c'est souvent un signal auditif.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"/><path d="M12 3v18"/></svg>
-            </div>
-            <h3>Demandes de répétition</h3>
-            <p>Vous faites souvent répéter, surtout dans des environnements bruyants.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
-            </div>
-            <h3>Volume TV élevé</h3>
-            <p>Vos proches vous demandent régulièrement de baisser le son de la télévision.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2 0 4-2 4-4M21 12c-2 0-4 2-4 4"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
-            <h3>Acouphènes</h3>
-            <p>Sifflements, bourdonnements ou tintements persistants méritent une analyse précise.</p>
-          </article>
+        <div class="check" data-check>
+          <div class="check-signs reveal" role="group" aria-label="Signes d'une perte auditive">
+            <button type="button" class="sign" aria-pressed="false" data-sign="groupe">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Conversations en groupe</strong><span class="desc">Difficile de suivre quand plusieurs personnes parlent en même temps, au resto ou en réunion.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="telephone">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Appels téléphoniques</strong><span class="desc">Les voix au téléphone semblent moins claires qu'avant, surtout sans haut-parleur.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="articulation">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>« On articule mal »</strong><span class="desc">Vous avez l'impression que les autres parlent moins bien : c'est souvent un signal auditif.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="repetition">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Demandes de répétition</strong><span class="desc">Vous faites souvent répéter, surtout dans des environnements bruyants.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="tv">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Volume TV élevé</strong><span class="desc">Vos proches vous demandent régulièrement de baisser le son de la télévision.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="acouphenes">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Acouphènes</strong><span class="desc">Sifflements, bourdonnements ou tintements persistants méritent une analyse précise.</span></span>
+            </button>
+          </div>
+
+          <div class="check-result reveal" aria-live="polite">
+            <span class="check-count"><span data-check-count>0</span><small> / 6</small></span>
+            <div class="check-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h3 data-check-title>Cochez ce qui vous ressemble</h3>
+            <p data-check-text>Sélectionnez les situations que vous vivez régulièrement. Le résultat s'affiche ici, instantanément.</p>
+            <a class="btn btn--light" href="rendez-vous.html#bilan">Réserver un bilan auditif</a>
+            <p class="check-note">Cet outil ne remplace pas un examen. Seul un bilan clinique mesure précisément votre audition.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- dB scale -->
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="split-content reveal">
-            <span class="eyebrow">Repères en décibels</span>
-            <h2>Mesurer pour comprendre</h2>
-            <p class="lead">À partir de <strong>35 dB de perte</strong>, l'usage d'aides auditives peut être recommandé. Plus le diagnostic est précoce, plus l'adaptation est confortable.</p>
-            <p class="muted">L'échelle ci-contre indique les seuils typiques. Un bilan complet précise vos fréquences exactes — un même chiffre dB peut traduire des gênes très différentes selon les fréquences touchées.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="tel:+32470206226">Faire un bilan</a>
-              <a class="btn btn-ghost" href="solutions.html">Découvrir les solutions</a>
-            </div>
-          </div>
-
-          <div class="db-scale reveal" aria-label="Échelle des niveaux d'audition">
-            <div class="db-row">
-              <span class="db-range">0 – 20 dB</span>
-              <span class="db-bar"><span style="width: 12%;"></span></span>
-              <span class="db-label">Audition normale</span>
-            </div>
-            <div class="db-row">
-              <span class="db-range">20 – 39 dB</span>
-              <span class="db-bar"><span style="width: 30%;"></span></span>
-              <span class="db-label">Perte légère — voix basses moins évidentes</span>
-            </div>
-            <div class="db-row">
-              <span class="db-range">40 – 69 dB</span>
-              <span class="db-bar"><span style="width: 55%;"></span></span>
-              <span class="db-label">Perte moyenne — conversations de groupe difficiles</span>
-            </div>
-            <div class="db-row">
-              <span class="db-range">70 – 89 dB</span>
-              <span class="db-bar"><span style="width: 75%;"></span></span>
-              <span class="db-label">Perte sévère — il faut élever la voix</span>
-            </div>
-            <div class="db-row">
-              <span class="db-range">90 – 120 dB</span>
-              <span class="db-bar"><span style="width: 92%;"></span></span>
-              <span class="db-label">Perte profonde — la voix forte ne suffit plus</span>
-            </div>
-            <div class="db-row">
-              <span class="db-range">&gt; 120 dB</span>
-              <span class="db-bar"><span style="width: 100%;"></span></span>
-              <span class="db-label">Surdité</span>
-            </div>
+    <!-- Décibels -->
+    <section class="section section--alt" id="decibels">
+      <div class="container split">
+        <div class="reveal">
+          <span class="kicker">Repères en décibels</span>
+          <h2>Mesurer pour comprendre</h2>
+          <p class="lead">À partir de <strong>35 dB de perte</strong>, l'usage d'aides auditives peut être recommandé. Plus le diagnostic est précoce, plus l'adaptation est confortable.</p>
+          <p class="muted">L'échelle ci-contre indique les seuils typiques. Un bilan complet précise vos fréquences exactes : un même chiffre en dB peut traduire des gênes très différentes selon les fréquences touchées.</p>
+          <div class="hero-actions">
+            <a class="btn" href="rendez-vous.html#bilan">Faire un bilan</a>
+            <a class="btn btn--outline" href="appareils.html">Découvrir les solutions</a>
           </div>
         </div>
+        <ol class="db-scale reveal" aria-label="Échelle des pertes auditives en décibels">
+          <li class="db-band" style="--c: #d9cbb9"><span class="range">0 – 20 dB</span><span><strong>Audition normale</strong></span></li>
+          <li class="db-band is-threshold" data-flag="Appareillage possible dès 35 dB" style="--c: #e89cb6"><span class="range">20 – 39 dB</span><span><strong>Perte légère</strong><span class="desc">Voix basses moins évidentes</span></span></li>
+          <li class="db-band" style="--c: #d35a86"><span class="range">40 – 69 dB</span><span><strong>Perte moyenne</strong><span class="desc">Conversations de groupe difficiles</span></span></li>
+          <li class="db-band" style="--c: #ca245f"><span class="range">70 – 89 dB</span><span><strong>Perte sévère</strong><span class="desc">Il faut élever la voix</span></span></li>
+          <li class="db-band" style="--c: #8d173f"><span class="range">90 – 120 dB</span><span><strong>Perte profonde</strong><span class="desc">La voix forte ne suffit plus</span></span></li>
+          <li class="db-band" style="--c: #4d0a21"><span class="range">&gt; 120 dB</span><span><strong>Surdité</strong></span></li>
+        </ol>
       </div>
     </section>
 
     <!-- Quand consulter -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="split split-flip">
-          <div class="split-image reveal">
-            <img src="assets/img/dinner-listening.png" alt="Femme attentive à un repas, environnement sonore difficile">
-          </div>
-          <div class="split-content reveal">
-            <span class="eyebrow">Quand consulter</span>
-            <h2>Mieux vaut tôt que tard</h2>
-            <p class="muted">Un dépistage précoce permet d'agir avant que la gêne ne s'installe durablement, et préserve la compréhension de la parole.</p>
-            <ul>
-              <li>Vous entendez, mais comprenez moins bien.</li>
-              <li>Vous évitez les repas de groupe ou les lieux bruyants.</li>
-              <li>Vos proches signalent un volume TV trop élevé.</li>
-              <li>Vous faites répéter plusieurs fois dans une même conversation.</li>
-              <li>Vous fatiguez plus vite à la fin de la journée à cause de l'écoute.</li>
-            </ul>
-            <p class="muted">Pour les questions de prise en charge, voir la page <a href="prix-remboursement.html" class="cta-link">Prix &amp; remboursement</a>.</p>
+    <section class="section" id="quand-consulter">
+      <div class="container split">
+        <div class="split-media split-media--tall reveal">
+          <img src="assets/img/dinner-listening.webp" width="1400" height="1120" loading="lazy" alt="Femme attentive pendant un repas, dans un environnement sonore difficile">
+        </div>
+        <div class="reveal">
+          <span class="kicker">Quand consulter</span>
+          <h2>Mieux vaut tôt que tard</h2>
+          <p class="lead">Un dépistage précoce permet d'agir avant que la gêne ne s'installe durablement, et préserve la compréhension de la parole.</p>
+          <ul class="checks">
+            <li>Vous entendez, mais comprenez moins bien.</li>
+            <li>Vous évitez les repas de groupe ou les lieux bruyants.</li>
+            <li>Vos proches signalent un volume TV trop élevé.</li>
+            <li>Vous faites répéter plusieurs fois dans une même conversation.</li>
+            <li>Vous fatiguez plus vite en fin de journée à cause de l'écoute.</li>
+          </ul>
+          <p class="muted" style="margin-top: 28px">Pour les questions de prise en charge, voir la page <a href="prix-remboursement.html">Prix &amp; remboursement</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acouphènes -->
+    <section class="section section--alt" id="acouphenes">
+      <div class="container split split--reverse">
+        <div class="split-media split-media--tall reveal">
+          <img src="assets/img/close-up-ear.webp" width="1120" height="1400" loading="lazy" alt="Gros plan sur l'oreille d'un homme aux cheveux gris">
+        </div>
+        <div class="reveal">
+          <span class="kicker">Acouphènes</span>
+          <h2>Sifflements, bourdonnements, tintements</h2>
+          <p class="lead">Des acouphènes persistants méritent une analyse précise. Ils accompagnent souvent une perte auditive, et se mesurent.</p>
+          <ul class="checks">
+            <li>Lors du bilan, nous mesurons <strong>leur fréquence et leur intensité</strong>.</li>
+            <li>Nous évaluons aussi votre tolérance au bruit, pour détecter une éventuelle hyperacousie.</li>
+            <li>Ces mesures orientent la prise en charge et les réglages, si un appareillage est utile.</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn" href="rendez-vous.html#acouphenes">Prendre rendez-vous</a>
+            <a class="btn btn--outline" href="service.html">Le bilan en 6 étapes</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-tight">
+    <!-- Aider un proche -->
+    <section class="section" id="proche">
       <div class="container">
-        <div class="cta-band-soft reveal">
+        <div class="section-head section-head--split reveal">
           <div>
-            <span class="eyebrow">Pas sûr d'être concerné ?</span>
-            <h2 class="mt-4">Un appel suffit pour y voir clair.</h2>
-            <p>En quelques questions, on évalue ensemble si un bilan est utile dans votre situation.</p>
+            <span class="kicker">Pour les proches</span>
+            <h2>Vous pensez qu'un parent entend moins bien ?</h2>
           </div>
-          <a href="tel:+32470206226" class="btn btn-primary btn-lg">0470 20 62 26</a>
+          <p class="lead">C'est souvent l'entourage qui remarque la gêne en premier. Quelques repères pour en parler sans brusquer.</p>
+        </div>
+        <div class="card-grid card-grid--4">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3>Choisir le bon moment</h3>
+            <p>Un moment calme, en tête-à-tête, plutôt qu'après une situation pénible ou devant d'autres personnes.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">02</span>
+            <h3>Parler de situations concrètes</h3>
+            <p>Le téléphone, les repas de famille, la télévision : partir du quotidien plutôt que d'un diagnostic.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">03</span>
+            <h3>Proposer un simple bilan</h3>
+            <p>Faire le point n'engage à rien : aucune obligation d'achat, aucune pression. On repart avec une réponse claire.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">04</span>
+            <h3>L'accompagner</h3>
+            <p>Vous pouvez prendre le rendez-vous pour lui ou pour elle, et venir au bilan pour écouter les explications ensemble.</p>
+          </article>
+        </div>
+        <div class="journey-cta reveal">
+          <a class="btn btn--lg" href="rendez-vous.html#proche">Prendre rendez-vous pour un proche</a>
         </div>
       </div>
     </section>
 
+    <section class="section section--alt final-cta">
+      <div class="container reveal">
+        <span class="kicker">Pas sûr d'être concerné ?</span>
+        <h2>Un appel suffit pour y voir clair.</h2>
+        <p class="lead">En quelques questions, on évalue ensemble si un bilan est utile dans votre situation.</p>
+        <div class="hero-actions">
+          <a class="btn btn--lg" href="tel:+32470206226">Appeler le 0470 20 62 26</a>
+          <a class="btn btn--lg btn--outline" href="rendez-vous.html">Demander un rendez-vous en ligne</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+<!-- @footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div>
           <a href="index.html" class="brand">
-            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
-            <span class="brand-text">AUDIOBEL</span>
+            <img src="assets/img/logo.webp" alt="" width="46" height="46">
+            <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
           </a>
-          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+          <p class="footer-about">Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
         </div>
-        <div class="footer-col">
-          <h4>Site</h4>
+        <div>
+          <h4>Comprendre</h4>
           <ul>
-            <li><a href="audition.html">L'audition</a></li>
-            <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service &amp; bilan</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Infos</h4>
-          <ul>
+            <li><a href="audition.html">Votre audition</a></li>
+            <li><a href="audition.html#acouphenes">Acouphènes</a></li>
+            <li><a href="appareils.html">Appareils &amp; marques</a></li>
             <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
-            <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact &amp; accès</a></li>
-            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Centre AUDIOBEL</h4>
-          <div class="footer-contact-line">
-            <div>
-              <strong>Adresse</strong>
-              Rue du Sart-Tilman 384, 4031 Liège
-            </div>
-          </div>
-          <div class="footer-contact-line" style="margin-top: 14px;">
-            <div>
-              <strong>Téléphone</strong>
-              <a href="tel:+32470206226">0470 20 62 26</a>
-            </div>
-          </div>
+        <div>
+          <h4>Le centre</h4>
+          <ul>
+            <li><a href="service.html">Bilan &amp; suivi</a></li>
+            <li><a href="apropos.html">Notre philosophie</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+            <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous trouver</h4>
+          <ul>
+            <li>Rue du Sart-Tilman 384<br>4031 Liège</li>
+            <li><a href="tel:+32470206226">0470 20 62 26</a></li>
+            <li>Lun–ven 9h–18h · sam 9h–13h</li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
-        <div class="footer-legal">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Cookies</a>
-        </div>
+        <span>© <span data-year>2026</span> AUDIOBEL · Tous droits réservés</span>
+        <nav aria-label="Liens légaux">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Revenir en haut de page">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
+  <div class="mobile-bar">
+    <a class="btn btn--outline" href="tel:+32470206226">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      Appeler
+    </a>
+    <a class="btn" href="rendez-vous.html">Prendre rendez-vous</a>
+  </div>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
 </body>
 </html>

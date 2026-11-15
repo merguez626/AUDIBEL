@@ -1,243 +1,225 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-BE" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AUDIOBEL — centre auditif indépendant à Liège. Bilan auditif, essai d'appareils 30 jours, suivi personnalisé et accompagnement INAMI / mutuelle.">
+  <title>AUDIOBEL · Centre auditif indépendant à Liège · Bilan & appareils auditifs</title>
+  <meta name="description" content="Centre auditif indépendant à Liège (Sart-Tilman) depuis 2012. Bilan auditif clinique de 45 min, 6 marques comparées, essai 30 jours sans engagement, dossier INAMI et mutualité pris en charge.">
   <meta name="theme-color" content="#8d173f">
-  <title>AUDIOBEL · Centre auditif à Liège</title>
+  <link rel="canonical" href="https://audibel.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AUDIOBEL · Centre auditif indépendant à Liège">
+  <meta property="og:description" content="Bilan auditif clinique, 6 marques comparées, essai 30 jours et suivi inclus. Sans pression commerciale.">
+  <meta property="og:image" content="https://audibel.netlify.app/assets/img/consultation.webp">
+  <meta property="og:locale" content="fr_BE">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+  <link rel="preload" as="image" href="assets/img/consultation.webp" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "MedicalBusiness"],
     "name": "AUDIOBEL",
-    "description": "Centre auditif indépendant à Liège",
+    "description": "Centre auditif indépendant à Liège : bilan auditif clinique, essai d'appareils auditifs 30 jours, suivi personnalisé et accompagnement INAMI / mutualité.",
+    "url": "https://audibel.netlify.app/",
+    "image": "https://audibel.netlify.app/assets/img/centre-interior.webp",
+    "logo": "https://audibel.netlify.app/assets/img/logo.png",
     "telephone": "+32470206226",
+    "foundingDate": "2012",
+    "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rue du Sart-Tilman 384",
       "postalCode": "4031",
       "addressLocality": "Liège",
       "addressCountry": "BE"
-    }
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+    ],
+    "areaServed": "Province de Liège"
   }
   </script>
 </head>
-<body data-page="home">
+<body>
+<!-- @header -->
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
-        <span class="brand-text">AUDIOBEL</span>
+  <div class="utility">
+    <div class="container">
+      <div class="utility-info">
+        <span class="open-status" data-open-status>Lun–ven 9h–18h · sam 9h–13h</span>
+        <span class="addr">Rue du Sart-Tilman 384, 4031 Liège</span>
+        <a class="addr" href="tel:+32470206226">0470 20 62 26</a>
+      </div>
+      <div class="text-size" role="group" aria-label="Taille du texte">
+        <button type="button" data-text-size="md" aria-pressed="true" aria-label="Texte normal">A</button>
+        <button type="button" data-text-size="lg" aria-pressed="false" aria-label="Texte agrandi">A+</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL, accueil">
+        <img src="assets/img/logo.webp" alt="" width="46" height="46">
+        <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
       </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
-        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
-        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
-        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
-        <a href="service.html" class="nav-link" data-page="service">Service</a>
-        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
-        <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
-        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <a href="audition.html">Votre audition</a>
+        <a href="appareils.html">Appareils</a>
+        <a href="service.html">Bilan &amp; suivi</a>
+        <a href="prix-remboursement.html">Prix &amp; remboursement</a>
+        <a href="apropos.html">Le centre</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <div class="nav-actions">
-        <a href="tel:+32470206226" class="nav-tel">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          <span class="tel-num">0470 20 62 26</span>
+      <div class="header-actions">
+        <a href="tel:+32470206226" class="header-phone" aria-label="Appeler le 0470 20 62 26">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="num">0470 20 62 26</span>
         </a>
-        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <a href="rendez-vous.html" class="btn">Prendre rendez-vous</a>
+        <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
+<!-- /@header -->
 
   <main id="contenu">
 
-    <!-- HERO -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
-          <span class="eyebrow">Centre auditif · Liège</span>
-          <h1 class="mt-4">Retrouvez le confort d'<em>entendre, tout simplement</em>.</h1>
-          <p class="lead mt-6">
-            Bilan auditif clinique, essai d'appareils pendant 30 jours et suivi personnalisé. AUDIOBEL est un centre indépendant qui compare plusieurs marques pour vous proposer la solution réellement adaptée à votre vie, et cela au meilleur prix.
-          </p>
+          <span class="kicker">Centre auditif indépendant · Liège</span>
+          <h1>Retrouvez le confort d'<em>entendre</em>, tout simplement.</h1>
+          <p class="lead">Bilan auditif clinique, essai d'appareils pendant 30 jours et suivi personnalisé. Nous comparons plusieurs marques pour vous proposer la solution réellement adaptée à votre vie, au meilleur prix.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="tel:+32470206226">
+            <a class="btn btn--lg" href="rendez-vous.html">
               Prendre rendez-vous
-              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
-            <a class="btn btn-ghost btn-lg" href="audition.html">Comprendre les signes</a>
+            <a class="btn btn--lg btn--outline" href="tel:+32470206226">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              0470 20 62 26
+            </a>
           </div>
-          <div class="hero-meta">
-            <span class="meta-item"><span class="dot"></span>Indépendant TOUTES marques</span>
-            <span class="meta-item"><span class="dot"></span>Essai 30 jours</span>
-            <span class="meta-item"><span class="dot"></span>Conventionné INAMI</span>
-          </div>
+          <ul class="hero-proof">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Indépendant, toutes marques</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Essai 30 jours sans engagement</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Conventionné INAMI</li>
+          </ul>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="hero-visual-frame">
-            <img src="assets/img/consultation.png" alt="Audiologiste accompagnant une patiente au centre AUDIOBEL">
+        <div class="hero-media reveal">
+          <div class="arch">
+            <img src="assets/img/consultation.webp" width="1120" height="1400" alt="Une audiologiste AUDIOBEL explique des résultats sur tablette à une patiente">
           </div>
-          <div class="hero-floating-card">
-            <span class="num">+14 ans</span>
-            <span class="lbl">à l'écoute des Liégeois depuis 2012</span>
+          <div class="hero-badge">
+            <strong>2012</strong>
+            <span>Plus de 14 ans à l'écoute des Liégeois</span>
+          </div>
+          <div class="hero-seal" aria-hidden="true">
+            <div><b>30</b>jours d'essai<br>en vie réelle</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TRUST / KPIs -->
-    <section class="section-tight">
+    <!-- ============ BANDEAU CHIFFRES ============ -->
+    <section class="proof-band" aria-label="AUDIOBEL en chiffres">
       <div class="container">
-        <div class="stat-row reveal">
-          <div class="stat">
-            <div class="stat-num">35 <span>dB</span></div>
-            <div class="stat-label">Seuil d'appareillage recommandé</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">30 <span>jours</span></div>
-            <div class="stat-label">Essai sans engagement en conditions réelles</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">6 <span>marques</span></div>
-            <div class="stat-label">Comparées pour chaque dossier</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">2012</div>
-            <div class="stat-label">Année d'ouverture du centre</div>
-          </div>
-        </div>
+        <ul>
+          <li><span class="num">45<small>min</small></span><p><strong>Bilan clinique complet</strong>En cabine insonorisée, résultats expliqués</p></li>
+          <li><span class="num">6</span><p><strong>Marques comparées</strong>Oticon, Phonak, Signia, Starkey, Unitron, Bernafon</p></li>
+          <li><span class="num">30<small>j</small></span><p><strong>Essai en vie réelle</strong>Maison, travail, loisirs, avant toute décision</p></li>
+          <li><span class="num">∞</span><p><strong>Suivi inclus</strong>Réglages, contrôles et entretien, tant que vous portez vos appareils</p></li>
+        </ul>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Notre approche</span>
-          <h2>Un parcours auditif clair, sans pression commerciale</h2>
-          <p class="lead">Vous arrivez avec une question, vous repartez avec une réponse précise. Le bon réglage compte autant que le bon appareil.</p>
-        </div>
-
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9"/><path d="M3 12h6"/><path d="M3 12c0 2.5 2 4 4 4"/></svg>
-            </div>
-            <h3>Bilan auditif clinique</h3>
-            <p>45 minutes en cabine insonorisée, mesures fiables et résultats expliqués dans la foulée par un audiologiste diplômé.</p>
-            <a href="service.html" class="cta-link">Voir le déroulement →</a>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3>Conseil indépendant</h3>
-            <p>Nous comparons six fabricants : Oticon, Phonak, Signia, Starkey, Unitron, Bernafon. Le modèle dépend de vous, pas d'un quota.</p>
-            <a href="solutions.html" class="cta-link">Découvrir les solutions →</a>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
-            </div>
-            <h3>Essai 30 jours</h3>
-            <p>Vous testez la solution dans votre vie réelle (maison, travail, loisirs) avant toute décision. Réglages intermédiaires inclus.</p>
-            <a href="prix-remboursement.html" class="cta-link">Voir les conditions →</a>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
-            </div>
-            <h3>Démarches simplifiées</h3>
-            <p>Nous préparons votre dossier INAMI et vérifions les interventions de votre mutualité. Vous avancez sereinement.</p>
-            <a href="prix-remboursement.html" class="cta-link">Vérifier ma prise en charge →</a>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L3 8l6-1z"/></svg>
-            </div>
-            <h3>Suivi sans surprise</h3>
-            <p>Réglages, entretien et conseils inclus. Tant que vous portez vos appareils, nous restons à vos côtés.</p>
-            <a href="apropos.html" class="cta-link">Notre engagement →</a>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3>Ancrage local</h3>
-            <p>Centre situé à Liège (Sart-Tilman). Accueil sur rendez-vous, écoute attentive, langage clair.</p>
-            <a href="contact.html" class="cta-link">Trouver le centre →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PARCOURS -->
+    <!-- ============ AIGUILLAGE PAR INTENTION ============ -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div class="split-content reveal">
-            <span class="eyebrow">Le parcours en 5 étapes</span>
-            <h2>De la première question au confort retrouvé</h2>
-            <p class="lead">Pas de jargon, pas d'urgence inutile. Chaque étape est expliquée et chaque décision vous appartient.</p>
-            <div class="hero-actions">
-              <a href="tel:+32470206226" class="btn btn-primary">Démarrer mon parcours</a>
-              <a href="service.html" class="btn btn-ghost">Détail du bilan</a>
-            </div>
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="kicker">Par où commencer ?</span>
+            <h2>Dites-nous où vous en êtes, on vous guide.</h2>
           </div>
+          <p class="lead">Que vous ayez un doute, que vous accompagniez un parent ou que vous portiez déjà des appareils, chaque situation a son chemin.</p>
+        </div>
 
-          <ol class="steps reveal" aria-label="Parcours auditif AUDIOBEL">
-            <li class="step">
+        <div class="intent-grid">
+          <a class="intent intent--featured reveal" href="#auto-evaluation">
+            <span class="intent-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></svg></span>
+            <h3>Je pense mal entendre</h3>
+            <p>Faites le point en 1 minute avec les 6 signes qui doivent alerter.</p>
+            <span class="go">Faire le point <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a class="intent reveal" href="rendez-vous.html#proche">
+            <span class="intent-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h3>J'accompagne un proche</h3>
+            <p>Prenez rendez-vous pour un parent. Vous êtes le bienvenu pendant le bilan.</p>
+            <span class="go">Réserver pour un proche <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a class="intent reveal" href="prix-remboursement.html">
+            <span class="intent-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12M4 14h9"/><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"/></svg></span>
+            <h3>Je veux connaître le prix</h3>
+            <p>Intervention INAMI, mutualité, reste à charge : tout est expliqué clairement.</p>
+            <span class="go">Prix &amp; remboursement <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a class="intent reveal" href="rendez-vous.html#suivi">
+            <span class="intent-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+            <h3>Je suis déjà appareillé</h3>
+            <p>Réglage, contrôle, entretien : demandez un rendez-vous de suivi.</p>
+            <span class="go">Rendez-vous de suivi <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENGAGEMENTS ============ -->
+    <section class="section section--alt">
+      <div class="container promise">
+        <figure class="promise-media reveal">
+          <div class="arch">
+            <img src="assets/img/centre-interior.webp" width="1120" height="1400" loading="lazy" alt="Salle d'attente lumineuse du centre AUDIOBEL, fauteuils clairs devant un mur bordeaux">
+          </div>
+          <figcaption><strong>Accueil sur rendez-vous</strong> pour vous garantir le temps et la sérénité nécessaires.</figcaption>
+        </figure>
+
+        <div class="reveal">
+          <span class="kicker">Notre approche</span>
+          <h2>Un parcours clair, <em>sans pression commerciale</em>.</h2>
+          <p class="lead">Vous arrivez avec une question, vous repartez avec une réponse précise. Le bon réglage compte autant que le bon appareil.</p>
+
+          <ol class="pillars">
+            <li class="pillar">
+              <span class="pillar-num">01</span>
               <div>
-                <h3>Prise de contact</h3>
-                <p>Un appel rapide pour comprendre votre situation et fixer un rendez-vous.</p>
-                <span class="step-meta">5 min · téléphone</span>
+                <h3>Indépendant des marques</h3>
+                <p>Nous comparons six fabricants. Le modèle dépend de votre audition et de votre vie, pas d'un quota.</p>
               </div>
             </li>
-            <li class="step">
+            <li class="pillar">
+              <span class="pillar-num">02</span>
               <div>
-                <h3>Bilan auditif clinique</h3>
-                <p>Examen complet en cabine, analyse de vos besoins et résultats commentés.</p>
-                <span class="step-meta">45 min · en centre</span>
+                <h3>Transparent sur le prix</h3>
+                <p>Coût brut, intervention INAMI, mutualité et reste à charge clarifiés avant toute décision. Nous préparons votre dossier.</p>
               </div>
             </li>
-            <li class="step">
+            <li class="pillar">
+              <span class="pillar-num">03</span>
               <div>
-                <h3>Choix de la solution</h3>
-                <p>Sélection du modèle selon votre audition, votre style de vie et votre budget.</p>
-                <span class="step-meta">30 min · sur conseil</span>
-              </div>
-            </li>
-            <li class="step">
-              <div>
-                <h3>Essai 30 jours</h3>
-                <p>Vous testez l'appareil au quotidien, on ajuste les réglages selon votre ressenti.</p>
-                <span class="step-meta">1 mois · vie réelle</span>
-              </div>
-            </li>
-            <li class="step">
-              <div>
-                <h3>Suivi durable</h3>
-                <p>Réglages fins, contrôles réguliers, entretien et accompagnement administratif inclus.</p>
-                <span class="step-meta">illimité</span>
+                <h3>Présent dans la durée</h3>
+                <p>Réglages, contrôles, entretien et conseils inclus. Tant que vous portez vos appareils, nous restons à vos côtés.</p>
               </div>
             </li>
           </ol>
@@ -245,181 +227,328 @@
       </div>
     </section>
 
-    <!-- 3 TYPES D'APPAREILS -->
-    <section class="section section-soft">
+    <!-- ============ AUTO-ÉVALUATION ============ -->
+    <section class="section" id="auto-evaluation">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Les 3 types d'appareils</span>
-          <h2>Trois formes, un choix adapté à votre audition</h2>
-          <p class="lead">Tous les appareils auditifs se rangent en trois grandes familles. Le bon format dépend de votre perte, de votre anatomie et de votre quotidien.</p>
+        <div class="section-head reveal">
+          <span class="kicker">Faire le point en 1 minute</span>
+          <h2>Ces situations vous parlent ?</h2>
+          <p class="lead">Un signal isolé n'est pas alarmant. Plusieurs signes cumulés méritent un bilan. Cochez ce que vous vivez régulièrement.</p>
         </div>
 
-        <div class="types-teaser">
-          <a class="type-teaser-card reveal" href="appareils.html#intra">
-            <div class="type-teaser-media">
-              <img src="assets/img/appareil/intra-product.png" alt="Appareil intra-auriculaire" loading="lazy">
-            </div>
-            <div class="type-teaser-body">
-              <h3>Intra-auriculaire</h3>
-              <p>L'appareil entier se loge dans le conduit auditif. La solution la plus discrète, pour les pertes légères à modérées.</p>
-              <span class="cta-link">En savoir plus →</span>
-            </div>
-          </a>
+        <div class="check" data-check>
+          <div class="check-signs reveal" role="group" aria-label="Signes d'une perte auditive">
+            <button type="button" class="sign" aria-pressed="false" data-sign="groupe">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Conversations en groupe</strong><span class="desc">Difficile de suivre quand plusieurs personnes parlent, au resto ou en réunion.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="telephone">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Appels téléphoniques</strong><span class="desc">Les voix au téléphone semblent moins claires qu'avant.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="articulation">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>« On articule mal »</strong><span class="desc">Vous avez l'impression que les autres parlent moins bien.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="repetition">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Faire répéter</strong><span class="desc">Vous faites souvent répéter, surtout dans le bruit.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="tv">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Volume TV élevé</strong><span class="desc">Vos proches vous demandent de baisser le son.</span></span>
+            </button>
+            <button type="button" class="sign" aria-pressed="false" data-sign="acouphenes">
+              <span class="sign-box" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span><strong>Acouphènes</strong><span class="desc">Sifflements, bourdonnements ou tintements persistants.</span></span>
+            </button>
+          </div>
 
-          <a class="type-teaser-card reveal" href="appareils.html#ric">
-            <div class="type-teaser-media">
-              <img src="assets/img/appareil/ric-product.png" alt="Mini-contour à écouteur déporté (RIC)" loading="lazy">
-            </div>
-            <div class="type-teaser-body">
-              <h3>Contour RIC</h3>
-              <p>Le boîtier derrière l'oreille, l'écouteur dans le conduit. Le format le plus polyvalent et le plus prescrit aujourd'hui.</p>
-              <span class="cta-link">En savoir plus →</span>
-            </div>
-          </a>
-
-          <a class="type-teaser-card reveal" href="appareils.html#bte">
-            <div class="type-teaser-media">
-              <img src="assets/img/appareil/bte-product.png" alt="Contour d'oreille classique (BTE)" loading="lazy">
-            </div>
-            <div class="type-teaser-body">
-              <h3>Contour BTE</h3>
-              <p>Le contour traditionnel, puissant et robuste. Idéal pour les pertes sévères à profondes et les situations particulières.</p>
-              <span class="cta-link">En savoir plus →</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="center-actions">
-          <a class="btn btn-ghost" href="appareils.html">Comparer les 3 types</a>
+          <div class="check-result reveal" aria-live="polite">
+            <span class="check-count"><span data-check-count>0</span><small> / 6</small></span>
+            <div class="check-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h3 data-check-title>Cochez ce qui vous ressemble</h3>
+            <p data-check-text>Sélectionnez les situations que vous vivez régulièrement. Le résultat s'affiche ici, instantanément.</p>
+            <a class="btn btn--light" href="rendez-vous.html#bilan">Réserver un bilan auditif</a>
+            <p class="check-note">Cet outil ne remplace pas un examen. Seul un bilan clinique mesure précisément votre audition.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- ============ PARCOURS ============ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="kicker">Le parcours en 5 étapes</span>
+          <h2>De la première question au confort retrouvé</h2>
+          <p class="lead">Pas de jargon, pas d'urgence inutile. Chaque étape est expliquée et chaque décision vous appartient.</p>
+        </div>
+        <ol class="journey reveal">
+          <li><h3>Prise de contact</h3><p>Un appel rapide pour comprendre votre situation et fixer un rendez-vous.</p><span class="meta">5 min · téléphone</span></li>
+          <li><h3>Bilan auditif clinique</h3><p>Examen complet en cabine, analyse de vos besoins et résultats commentés.</p><span class="meta">45 min · en centre</span></li>
+          <li><h3>Choix de la solution</h3><p>Le modèle selon votre audition, votre style de vie et votre budget.</p><span class="meta">30 min · sur conseil</span></li>
+          <li><h3>Essai 30 jours</h3><p>Vous testez au quotidien, on ajuste les réglages selon votre ressenti.</p><span class="meta">1 mois · vie réelle</span></li>
+          <li><h3>Suivi durable</h3><p>Réglages fins, contrôles, entretien et accompagnement administratif.</p><span class="meta">Illimité</span></li>
+        </ol>
+        <div class="journey-cta reveal">
+          <a href="rendez-vous.html" class="btn btn--lg">Démarrer mon parcours</a>
+          <a href="service.html" class="btn btn--lg btn--outline">Le détail du bilan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3 TYPES D'APPAREILS ============ -->
     <section class="section">
       <div class="container">
-        <div class="section-header center reveal">
-          <span class="eyebrow">Avis patients</span>
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="kicker">Les 3 types d'appareils</span>
+            <h2>Trois formes, un choix adapté à <em>votre</em> audition.</h2>
+          </div>
+          <p class="lead">Le bon format dépend de votre perte, de votre anatomie et de votre quotidien. Survolez une carte pour voir l'appareil porté.</p>
+        </div>
+
+        <div class="types">
+          <a class="type reveal" href="appareils.html#intra">
+            <div class="type-media">
+              <span class="type-tag">Le plus discret</span>
+              <img class="product" src="assets/img/appareil/intra-product.webp" width="1254" height="1254" loading="lazy" alt="Appareil auditif intra-auriculaire">
+              <img class="worn" src="assets/img/appareil/intra-worn.webp" width="1120" height="1400" loading="lazy" alt="" aria-hidden="true">
+            </div>
+            <div class="type-body">
+              <h3>Intra-auriculaire</h3>
+              <p>L'appareil entier se loge dans le conduit auditif. La solution la plus discrète.</p>
+              <span class="type-fit">Pertes <span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span> légères à modérées</span>
+            </div>
+          </a>
+          <a class="type reveal" href="appareils.html#ric">
+            <div class="type-media">
+              <span class="type-tag">Le plus prescrit</span>
+              <img class="product" src="assets/img/appareil/ric-product.webp" width="1254" height="1254" loading="lazy" alt="Mini-contour à écouteur déporté (RIC)">
+              <img class="worn" src="assets/img/appareil/ric-worn.webp" width="1120" height="1400" loading="lazy" alt="" aria-hidden="true">
+            </div>
+            <div class="type-body">
+              <h3>Contour RIC</h3>
+              <p>Le boîtier derrière l'oreille, l'écouteur dans le conduit. Le format le plus polyvalent.</p>
+              <span class="type-fit">Pertes <span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span> légères à sévères</span>
+            </div>
+          </a>
+          <a class="type reveal" href="appareils.html#bte">
+            <div class="type-media">
+              <span class="type-tag">Le plus puissant</span>
+              <img class="product" src="assets/img/appareil/bte-product.webp" width="1254" height="1254" loading="lazy" alt="Contour d'oreille classique (BTE)">
+              <img class="worn" src="assets/img/appareil/bte-worn.webp" width="1120" height="1400" loading="lazy" alt="" aria-hidden="true">
+            </div>
+            <div class="type-body">
+              <h3>Contour BTE</h3>
+              <p>Le contour traditionnel, puissant et robuste, pour les situations particulières.</p>
+              <span class="type-fit">Pertes <span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span> sévères à profondes</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIX & REMBOURSEMENT ============ -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="price-band reveal">
+          <div class="price-grid">
+            <div>
+              <span class="kicker">Prix &amp; remboursement</span>
+              <h2>Jusqu'à 1 701 € d'intervention INAMI pour deux oreilles.</h2>
+              <p class="lead">Les mutualités ajoutent souvent une intervention complémentaire. Nous vérifions votre situation et clarifions le reste à charge <strong>avant</strong> toute commande.</p>
+              <div class="price-actions">
+                <a href="prix-remboursement.html" class="btn btn--light">Comprendre mon remboursement</a>
+                <a href="tel:+32470206226" class="btn btn--ghost-light">Vérifier ma situation</a>
+              </div>
+            </div>
+            <div class="price-table" role="table" aria-label="Montants indicatifs INAMI 2026">
+              <div class="price-row head" role="row"><span role="columnheader">Âge</span><span role="columnheader" class="mono">1 oreille</span><span role="columnheader">2 oreilles</span></div>
+              <div class="price-row" role="row"><span class="age" role="cell">Moins de 18 ans</span><span class="amt mono" role="cell">≈ 1 451 €</span><span class="amt hl" role="cell">≈ 2 875 €</span></div>
+              <div class="price-row" role="row"><span class="age" role="cell">18 à 64 ans</span><span class="amt mono" role="cell">≈ 884 €</span><span class="amt hl" role="cell">≈ 1 751 €</span></div>
+              <div class="price-row" role="row"><span class="age" role="cell">65 ans et plus</span><span class="amt mono" role="cell">≈ 859 €</span><span class="amt hl" role="cell">≈ 1 701 €</span></div>
+              <p class="price-foot">Montants indicatifs INAMI 2026. Le montant exact dépend de votre statut (BIM/VIPO ou ordinaire) et de votre mutualité.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AVIS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="kicker">Avis patients</span>
           <h2>Pourquoi ils nous recommandent</h2>
         </div>
-        <div class="testimonials">
-          <article class="testimonial reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <div class="reviews">
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
             <blockquote>« On a pris le temps d'écouter ma situation et d'expliquer chaque résultat. Je n'avais jamais eu un suivi aussi clair. »</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">MD</div>
-              <div class="testimonial-info">
-                <strong>Marie D.</strong>
-                <span>Patiente à Liège</span>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <footer><span class="avatar" aria-hidden="true">MD</span><div><strong>Marie D.</strong><span>Patiente à Liège</span></div></footer>
+          </figure>
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
             <blockquote>« L'essai 30 jours m'a permis de vraiment tester en réunion et au resto. Adapté ensuite, sans pression. »</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">JL</div>
-              <div class="testimonial-info">
-                <strong>Jean L.</strong>
-                <span>Cadre, 58 ans</span>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <footer><span class="avatar" aria-hidden="true">JL</span><div><strong>Jean L.</strong><span>Cadre, 58 ans</span></div></footer>
+          </figure>
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
             <blockquote>« Un accueil humain et des réglages qui évoluent avec moi. Je n'imaginais plus de revenir au silence. »</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">AC</div>
-              <div class="testimonial-info">
-                <strong>Anne C.</strong>
-                <span>Retraitée</span>
-              </div>
-            </div>
-          </article>
+            <footer><span class="avatar" aria-hidden="true">AC</span><div><strong>Anne C.</strong><span>Retraitée</span></div></footer>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section-tight">
+    <!-- ============ VENIR AU CENTRE ============ -->
+    <section class="section--tight">
       <div class="container">
-        <div class="cta-band reveal">
-          <div class="cta-band-inner">
-            <div>
-              <span class="eyebrow">Premier pas</span>
-              <h2 class="mt-4">Parlons de votre audition.</h2>
-              <p>Un échange simple suffit pour savoir si un bilan est utile dans votre situation. Sans engagement.</p>
+        <div class="visit reveal">
+          <div class="visit-media">
+            <img src="assets/img/audiologist-booth.webp" width="1120" height="1400" loading="lazy" alt="Audiologiste à la console d'audiométrie devant la cabine insonorisée">
+          </div>
+          <div class="visit-body">
+            <span class="kicker">Venir au centre</span>
+            <h2>Au Sart-Tilman, facile d'accès.</h2>
+            <div class="visit-facts">
+              <div class="fact">
+                <span class="fact-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div><strong>Rue du Sart-Tilman 384, 4031 Liège</strong><p>Accès aisé depuis l'E25 et l'E40. Parking gratuit à proximité, places PMR devant l'entrée.</p></div>
+              </div>
+              <div class="fact">
+                <span class="fact-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                <div>
+                  <strong>Horaires, sur rendez-vous</strong>
+                  <table class="hours">
+                    <tr data-day="1,2,3,4,5"><td>Lundi – vendredi</td><td>9h – 18h</td></tr>
+                    <tr data-day="6"><td>Samedi</td><td>9h – 13h</td></tr>
+                    <tr data-day="0"><td>Dimanche</td><td>Fermé</td></tr>
+                  </table>
+                </div>
+              </div>
+              <div class="fact">
+                <span class="fact-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1M5 8l3-3 5.5 3-2.36 3.5M4.24 14.5a5 5 0 0 0 6.88 6M13.76 17.5a5 5 0 0 0-6.88-6"/></svg></span>
+                <div><strong>Accessible PMR</strong><p>Accès de plain-pied, sanitaires adaptés. Besoin particulier ? Dites-le-nous à la prise de rendez-vous.</p></div>
+              </div>
             </div>
-            <a href="tel:+32470206226" class="btn btn-light btn-lg">
-              0470 20 62 26
-              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
+            <div class="visit-actions">
+              <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+du+Sart-Tilman+384,+4031+Li%C3%A8ge,+Belgique" target="_blank" rel="noopener">Itinéraire</a>
+              <a class="btn btn--outline" href="contact.html">Toutes les infos d'accès</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ============ FAQ ============ -->
+    <section class="section">
+      <div class="container faq-layout">
+        <div class="reveal">
+          <span class="kicker">Questions fréquentes</span>
+          <h2>Ce qu'on nous demande souvent</h2>
+          <p class="lead">Une autre question ? Appelez-nous, on vous répond simplement.</p>
+          <a class="link-arrow" href="tel:+32470206226">0470 20 62 26 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Le bilan m'engage-t-il à acheter un appareil ?</summary>
+            <p>Non. Aucune obligation d'achat, aucune pression. Vous repartez avec un audiogramme commenté et un avis professionnel clair, et, si c'est pertinent, une proposition de solution à essayer.</p>
+          </details>
+          <details>
+            <summary>Et si je ne suis pas satisfait pendant l'essai ?</summary>
+            <p>L'essai n'engage à rien. Vous pouvez interrompre la procédure ou changer de modèle. Notre rôle est de trouver la bonne solution, pas de vendre à tout prix.</p>
+          </details>
+          <details>
+            <summary>Faut-il passer chez un ORL ?</summary>
+            <p>Oui, pour bénéficier de l'intervention INAMI : une prescription d'un médecin ORL est nécessaire. Nous vous expliquons la marche à suivre et préparons le dossier avec vous.</p>
+          </details>
+          <details>
+            <summary>Devrai-je avancer des frais importants ?</summary>
+            <p>Cela dépend du dossier et de votre mutualité. Nous clarifions le reste à charge avant toute validation, pour que vous sachiez exactement à quoi vous attendre.</p>
+          </details>
+          <details>
+            <summary>Que comprend l'accompagnement ?</summary>
+            <p>Le choix du modèle, les réglages, le suivi régulier, l'entretien et l'accompagnement administratif pour le remboursement. Tant que vous portez vos appareils, nous restons à vos côtés.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section section--alt final-cta">
+      <div class="container reveal">
+        <span class="kicker">Premier pas</span>
+        <h2>Parlons de votre audition.</h2>
+        <p class="lead">Un échange simple suffit pour savoir si un bilan est utile dans votre situation. Sans engagement.</p>
+        <div class="hero-actions">
+          <a class="btn btn--lg" href="rendez-vous.html">Prendre rendez-vous en ligne</a>
+          <a class="btn btn--lg btn--outline" href="tel:+32470206226">Appeler le 0470 20 62 26</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+<!-- @footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div>
           <a href="index.html" class="brand">
-            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
-            <span class="brand-text">AUDIOBEL</span>
+            <img src="assets/img/logo.webp" alt="" width="46" height="46">
+            <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
           </a>
-          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+          <p class="footer-about">Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
         </div>
-        <div class="footer-col">
-          <h4>Site</h4>
+        <div>
+          <h4>Comprendre</h4>
           <ul>
-            <li><a href="audition.html">L'audition</a></li>
-            <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service &amp; bilan</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Infos</h4>
-          <ul>
+            <li><a href="audition.html">Votre audition</a></li>
+            <li><a href="audition.html#acouphenes">Acouphènes</a></li>
+            <li><a href="appareils.html">Appareils &amp; marques</a></li>
             <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
-            <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact &amp; accès</a></li>
-            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Centre AUDIOBEL</h4>
-          <div class="footer-contact-line">
-            <div>
-              <strong>Adresse</strong>
-              Rue du Sart-Tilman 384, 4031 Liège
-            </div>
-          </div>
-          <div class="footer-contact-line" style="margin-top: 14px;">
-            <div>
-              <strong>Téléphone</strong>
-              <a href="tel:+32470206226">0470 20 62 26</a>
-            </div>
-          </div>
+        <div>
+          <h4>Le centre</h4>
+          <ul>
+            <li><a href="service.html">Bilan &amp; suivi</a></li>
+            <li><a href="apropos.html">Notre philosophie</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+            <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous trouver</h4>
+          <ul>
+            <li>Rue du Sart-Tilman 384<br>4031 Liège</li>
+            <li><a href="tel:+32470206226">0470 20 62 26</a></li>
+            <li>Lun–ven 9h–18h · sam 9h–13h</li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
-        <div class="footer-legal">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Cookies</a>
-        </div>
+        <span>© <span data-year>2026</span> AUDIOBEL · Tous droits réservés</span>
+        <nav aria-label="Liens légaux">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Revenir en haut de page">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
+  <div class="mobile-bar">
+    <a class="btn btn--outline" href="tel:+32470206226">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      Appeler
+    </a>
+    <a class="btn" href="rendez-vous.html">Prendre rendez-vous</a>
+  </div>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
 </body>
 </html>

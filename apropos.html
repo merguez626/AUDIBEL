@@ -1,114 +1,109 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-BE" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AUDIOBEL à Liège : centre auditif indépendant depuis 2012. Notre mission, notre approche et notre engagement pour une audition retrouvée.">
+  <title>Le centre AUDIOBEL à Liège : notre philosophie depuis 2012</title>
+  <meta name="description" content="AUDIOBEL, centre auditif indépendant à Liège depuis 2012 : indépendance, précision scientifique et écoute humaine. Notre mission : réduire l'isolement provoqué par la perte auditive.">
   <meta name="theme-color" content="#8d173f">
-  <title>AUDIOBEL · À propos du centre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
 </head>
-<body data-page="about">
+<body>
+<!-- @header -->
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
-        <span class="brand-text">AUDIOBEL</span>
-      </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
-        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
-        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
-        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
-        <a href="service.html" class="nav-link" data-page="service">Service</a>
-        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
-        <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
-        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="tel:+32470206226" class="nav-tel">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          <span class="tel-num">0470 20 62 26</span>
-        </a>
-        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="utility">
+    <div class="container">
+      <div class="utility-info">
+        <span class="open-status" data-open-status>Lun–ven 9h–18h · sam 9h–13h</span>
+        <span class="addr">Rue du Sart-Tilman 384, 4031 Liège</span>
+        <a class="addr" href="tel:+32470206226">0470 20 62 26</a>
+      </div>
+      <div class="text-size" role="group" aria-label="Taille du texte">
+        <button type="button" data-text-size="md" aria-pressed="true" aria-label="Texte normal">A</button>
+        <button type="button" data-text-size="lg" aria-pressed="false" aria-label="Texte agrandi">A+</button>
       </div>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL, accueil">
+        <img src="assets/img/logo.webp" alt="" width="46" height="46">
+        <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <a href="audition.html">Votre audition</a>
+        <a href="appareils.html">Appareils</a>
+        <a href="service.html">Bilan &amp; suivi</a>
+        <a href="prix-remboursement.html">Prix &amp; remboursement</a>
+        <a href="apropos.html" aria-current="page">Le centre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+32470206226" class="header-phone" aria-label="Appeler le 0470 20 62 26">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="num">0470 20 62 26</span>
+        </a>
+        <a href="rendez-vous.html" class="btn">Prendre rendez-vous</a>
+        <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
+<!-- /@header -->
 
   <main id="contenu">
-
-    <section class="hero hero-compact">
-      <div class="container hero-grid">
+    <section class="page-hero page-hero--media">
+      <div class="container">
         <div class="reveal">
-          <span class="eyebrow">Notre philosophie</span>
-          <h1 class="mt-4">Entendre <em>plus juste</em>, pour vivre plus pleinement.</h1>
-          <p class="lead mt-6">
-            Notre mission n'est pas de vendre des appareils, mais de réduire l'isolement provoqué par la perte auditive. Cela commence par écouter — vraiment — chaque personne qui pousse notre porte.
-          </p>
+          <span class="kicker">Notre philosophie</span>
+          <h1>Entendre plus juste, <em>pour vivre plus pleinement</em>.</h1>
+          <p class="lead">Notre mission n'est pas de vendre des appareils, mais de réduire l'isolement provoqué par la perte auditive. Cela commence par écouter, vraiment, chaque personne qui pousse notre porte.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+32470206226">Parler à notre équipe</a>
-            <a class="btn btn-ghost" href="service.html">Le bilan auditif</a>
+            <a class="btn btn--lg" href="rendez-vous.html">Parler à notre équipe</a>
+            <a class="btn btn--lg btn--outline" href="service.html">Le bilan auditif</a>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="hero-visual-frame">
-            <img src="assets/img/centre-interior.png" alt="Salle d'attente du centre AUDIOBEL à Liège">
-          </div>
+        <div class="page-hero-media reveal">
+          <img src="assets/img/centre-interior.webp" width="1120" height="1400" alt="Salle d'attente du centre AUDIOBEL à Liège" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <!-- Mission -->
-    <section class="section section-soft">
-      <div class="container container-narrow">
-        <div class="section-header center reveal">
-          <span class="eyebrow">Pourquoi c'est important</span>
-          <h2>Les rires entre amis. La voix d'un proche au téléphone. Le crépitement d'un vinyle.</h2>
-        </div>
-        <p class="lead reveal" style="max-width: 64ch; margin-inline: auto; text-align: center;">
-          Tous ces sons que vos oreilles captent — un sens d'une finesse inouïe, et pourtant fragile. Avec le temps, l'audition s'use, on fait répéter, on perd le fil, on évite certaines situations. On parle moins. On s'isole.
-        </p>
-        <p class="lead reveal" style="max-width: 64ch; margin-inline: auto; text-align: center; margin-top: var(--space-4); color: var(--brand);">
-          Notre rôle est d'éviter cela.
-        </p>
+    <section class="section section--alt">
+      <div class="container manifesto reveal">
+        <span class="kicker">Pourquoi c'est important</span>
+        <blockquote>Les rires entre amis. La voix d'un proche au téléphone. <em>Le crépitement d'un vinyle.</em></blockquote>
+        <p>Tous ces sons que vos oreilles captent : un sens d'une finesse inouïe, et pourtant fragile. Avec le temps, l'audition s'use, on fait répéter, on perd le fil, on évite certaines situations. On parle moins. On s'isole.</p>
+        <p class="punch">Notre rôle est d'éviter cela.</p>
       </div>
     </section>
 
-    <!-- Approche / Valeurs -->
     <section class="section">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Notre approche</span>
+        <div class="section-head section-head--center reveal">
+          <span class="kicker">Notre approche</span>
           <h2>Trois principes qui guident chaque consultation</h2>
         </div>
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4 2 8L12 17l-6.5 4 2-8L2 9h7z"/></svg>
-            </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
             <h3>Indépendance</h3>
             <p>Nous ne sommes pas liés à un fabricant. Le modèle dépend uniquement de votre profil auditif et de votre vie.</p>
           </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M3 12h18M3 6h18"/></svg>
-            </div>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l3-8 4 16 3-8h7"/></svg></span>
             <h3>Précision scientifique</h3>
             <p>Mesures normalisées, cabine insonorisée, audiométrie tonale et vocale. Pas d'à-peu-près.</p>
           </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
             <h3>Écoute humaine</h3>
             <p>Pas de pression commerciale. On vous écoute, on explique, on ajuste à votre rythme.</p>
           </article>
@@ -116,185 +111,114 @@
       </div>
     </section>
 
-    <!-- Timeline -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="split">
-          <div class="split-content reveal">
-            <span class="eyebrow">Notre histoire</span>
-            <h2>Depuis 2012, à vos côtés à Liège</h2>
-            <p class="lead">AUDIOBEL accompagne les patients de la région liégeoise avec une approche fondée sur l'écoute, la précision des réglages et le suivi dans la durée.</p>
-            <p class="muted">Comme des centaines de patients avant vous, demandez un rendez-vous simple et sans pression. On vous écoute, on explique, on ajuste à votre rythme.</p>
-            <a class="btn btn-primary mt-4" href="tel:+32470206226">Prendre rendez-vous</a>
-          </div>
-
-          <div class="timeline reveal">
-            <div class="timeline-item">
-              <span class="timeline-year">2012</span>
-              <h3>Ouverture du centre</h3>
-              <p>Création d'AUDIOBEL à Liège avec une exigence : remettre l'écoute du patient au centre.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2016</span>
-              <h3>Cabine insonorisée</h3>
-              <p>Installation d'une cabine clinique pour des mesures normalisées et reproductibles.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">2020</span>
-              <h3>Solutions Bluetooth &amp; rechargeables</h3>
-              <p>Élargissement du catalogue aux générations connectées et rechargeables.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-year">Aujourd'hui</span>
-              <h3>Six fabricants comparés</h3>
-              <p>Indépendance préservée, conventionnement INAMI, accompagnement administratif inclus.</p>
-            </div>
+    <section class="section section--alt">
+      <div class="container split">
+        <div class="reveal">
+          <span class="kicker">Notre histoire</span>
+          <h2>Depuis 2012, à vos côtés à Liège</h2>
+          <p class="lead">AUDIOBEL accompagne les patients de la région liégeoise avec une approche fondée sur l'écoute, la précision des réglages et le suivi dans la durée.</p>
+          <p class="muted">Comme des centaines de patients avant vous, demandez un rendez-vous simple et sans pression. On vous écoute, on explique, on ajuste à votre rythme.</p>
+          <div class="hero-actions">
+            <a class="btn" href="rendez-vous.html">Prendre rendez-vous</a>
           </div>
         </div>
+        <ol class="timeline reveal">
+          <li><span class="year">2012</span><div><h3>Ouverture du centre</h3><p>Création d'AUDIOBEL à Liège avec une exigence : remettre l'écoute du patient au centre.</p></div></li>
+          <li><span class="year">2016</span><div><h3>Cabine insonorisée</h3><p>Installation d'une cabine clinique pour des mesures normalisées et reproductibles.</p></div></li>
+          <li><span class="year">2020</span><div><h3>Bluetooth &amp; rechargeable</h3><p>Élargissement du catalogue aux générations connectées et rechargeables.</p></div></li>
+          <li><span class="year">Auj.</span><div><h3>Six fabricants comparés</h3><p>Indépendance préservée, conventionnement INAMI, accompagnement administratif inclus.</p></div></li>
+        </ol>
       </div>
     </section>
 
-    <!-- Bénéfices -->
     <section class="section">
       <div class="container">
-        <div class="section-header center reveal">
-          <span class="eyebrow">Bien appareillé, vous retrouvez</span>
-          <h2>Bien plus qu'un volume sonore</h2>
-        </div>
-
-        <div class="features-grid cols-4">
-          <article class="feature-card reveal">
-            <h3>Compréhension</h3>
-            <p>Une parole claire, même en milieu vivant ou en groupe.</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Énergie</h3>
-            <p>Moins de fatigue auditive en fin de journée.</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Lien social</h3>
-            <p>Des conversations retrouvées, en famille comme entre amis.</p>
-          </article>
-          <article class="feature-card reveal">
-            <h3>Discrétion</h3>
-            <p>Une solution adaptée à votre style de vie, sans compromis esthétique.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compléments à venir -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Confiance &amp; transparence</span>
-          <h2>Ce que vous découvrirez bientôt</h2>
-          <p class="lead">Cette page s'enrichira progressivement avec des contenus réels du centre.</p>
-        </div>
-        <div class="features-grid cols-4">
-          <article class="feature-card reveal">
-            <span class="tag tag-outline">Bientôt</span>
-            <h3>L'équipe</h3>
-            <p>Nos audiologistes, leurs diplômes et leur parcours.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="tag tag-outline">Bientôt</span>
-            <h3>Avis patients</h3>
-            <p>Témoignages vérifiés de patients accompagnés à Liège.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="tag tag-outline">Bientôt</span>
-            <h3>Le centre en images</h3>
-            <p>Photos de l'accueil, des cabines et des salles de réglage.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="tag tag-outline">Bientôt</span>
-            <h3>Partenaires médicaux</h3>
-            <p>Nos collaborations avec les ORL et prescripteurs de la région.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tight">
-      <div class="container">
-        <div class="cta-band reveal">
-          <div class="cta-band-inner">
-            <div>
-              <span class="eyebrow">Faisons connaissance</span>
-              <h2 class="mt-4">Le meilleur moyen de comprendre notre approche, c'est de la vivre.</h2>
-              <p>Un premier rendez-vous, sans engagement, pour faire le point sur votre audition.</p>
-            </div>
-            <a href="tel:+32470206226" class="btn btn-light btn-lg">
-              0470 20 62 26
-              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="kicker">Bien appareillé, vous retrouvez</span>
+            <h2>Bien plus qu'un volume sonore</h2>
           </div>
         </div>
+        <div class="card-grid card-grid--4">
+          <article class="card reveal"><span class="card-num">01</span><h3>Compréhension</h3><p>Une parole claire, même en milieu vivant ou en groupe.</p></article>
+          <article class="card reveal"><span class="card-num">02</span><h3>Énergie</h3><p>Moins de fatigue auditive en fin de journée.</p></article>
+          <article class="card reveal"><span class="card-num">03</span><h3>Lien social</h3><p>Des conversations retrouvées, en famille comme entre amis.</p></article>
+          <article class="card reveal"><span class="card-num">04</span><h3>Discrétion</h3><p>Une solution adaptée à votre style de vie, sans compromis esthétique.</p></article>
+        </div>
       </div>
     </section>
 
+    <section class="section section--alt final-cta">
+      <div class="container reveal">
+        <span class="kicker">Faisons connaissance</span>
+        <h2>Le meilleur moyen de comprendre notre approche, c'est de la vivre.</h2>
+        <p class="lead">Un premier rendez-vous, sans engagement, pour faire le point sur votre audition.</p>
+        <div class="hero-actions">
+          <a class="btn btn--lg" href="rendez-vous.html">Prendre rendez-vous</a>
+          <a class="btn btn--lg btn--outline" href="tel:+32470206226">Appeler le 0470 20 62 26</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+<!-- @footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div>
           <a href="index.html" class="brand">
-            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
-            <span class="brand-text">AUDIOBEL</span>
+            <img src="assets/img/logo.webp" alt="" width="46" height="46">
+            <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
           </a>
-          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+          <p class="footer-about">Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
         </div>
-        <div class="footer-col">
-          <h4>Site</h4>
+        <div>
+          <h4>Comprendre</h4>
           <ul>
-            <li><a href="audition.html">L'audition</a></li>
-            <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service &amp; bilan</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Infos</h4>
-          <ul>
+            <li><a href="audition.html">Votre audition</a></li>
+            <li><a href="audition.html#acouphenes">Acouphènes</a></li>
+            <li><a href="appareils.html">Appareils &amp; marques</a></li>
             <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
-            <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact &amp; accès</a></li>
-            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Centre AUDIOBEL</h4>
-          <div class="footer-contact-line">
-            <div>
-              <strong>Adresse</strong>
-              Rue du Sart-Tilman 384, 4031 Liège
-            </div>
-          </div>
-          <div class="footer-contact-line" style="margin-top: 14px;">
-            <div>
-              <strong>Téléphone</strong>
-              <a href="tel:+32470206226">0470 20 62 26</a>
-            </div>
-          </div>
+        <div>
+          <h4>Le centre</h4>
+          <ul>
+            <li><a href="service.html">Bilan &amp; suivi</a></li>
+            <li><a href="apropos.html">Notre philosophie</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+            <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous trouver</h4>
+          <ul>
+            <li>Rue du Sart-Tilman 384<br>4031 Liège</li>
+            <li><a href="tel:+32470206226">0470 20 62 26</a></li>
+            <li>Lun–ven 9h–18h · sam 9h–13h</li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
-        <div class="footer-legal">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Cookies</a>
-        </div>
+        <span>© <span data-year>2026</span> AUDIOBEL · Tous droits réservés</span>
+        <nav aria-label="Liens légaux">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Revenir en haut de page">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
+  <div class="mobile-bar">
+    <a class="btn btn--outline" href="tel:+32470206226">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      Appeler
+    </a>
+    <a class="btn" href="rendez-vous.html">Prendre rendez-vous</a>
+  </div>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
 </body>
 </html>

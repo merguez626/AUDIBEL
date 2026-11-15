@@ -1,0 +1,9 @@
+# Redirections Netlify
+# L'ancienne page Solutions est fusionnée dans Appareils
+/solutions.html   /appareils.html   301
+/solutions        /appareils        301
+
+# Fichiers de travail : non publiés
+/partials/*       /404.html         404!
+/tools/*          /404.html         404!
+/docs/*           /404.html         404!
