@@ -1,330 +1,308 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-BE" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prix des appareils auditifs, intervention INAMI, mutualités et reste à charge à Liège : informations claires chez AUDIOBEL.">
+  <title>Prix et remboursement INAMI des appareils auditifs en Belgique (2026) · AUDIOBEL</title>
+  <meta name="description" content="Combien rembourse l'INAMI pour un appareil auditif en 2026 ? Simulateur par âge, conditions (35 dB, ORL, essai 28 jours), procédure et intervention de la mutualité, expliqués par AUDIOBEL à Liège.">
   <meta name="theme-color" content="#8d173f">
-  <title>AUDIOBEL · Prix &amp; remboursement</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/logo-nav2-transparent.png">
-  <link rel="apple-touch-icon" href="assets/img/logo-nav2-transparent.png">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Devrai-je avancer des frais importants ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Le montant avancé dépend de votre situation et de votre mutualité. Nous vérifions votre dossier avant toute décision."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Combien de temps dure l'essai ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Un essai d'au moins 28 jours est prévu, avec des réglages intermédiaires selon votre ressenti."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Les montants sont-ils fixes ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Non. Les conditions et montants INAMI ou mutualité peuvent évoluer. Une vérification personnalisée est recommandée."
-        }
-      }
+      { "@type": "Question", "name": "Devrai-je avancer des frais importants ?", "acceptedAnswer": { "@type": "Answer", "text": "Cela dépend du dossier et de votre mutualité. Nous clarifions le reste à charge avant toute validation, pour que vous sachiez exactement à quoi vous attendre." } },
+      { "@type": "Question", "name": "Combien de temps dure l'essai ?", "acceptedAnswer": { "@type": "Answer", "text": "L'essai dure au moins 28 jours, en conditions réelles. Des réglages intermédiaires sont prévus selon votre ressenti, et un gain auditif d'au moins 5 dB doit être objectivé pour valider la prise en charge." } },
+      { "@type": "Question", "name": "Que comprend l'accompagnement ?", "acceptedAnswer": { "@type": "Answer", "text": "Le choix du modèle, les réglages, le suivi régulier, l'entretien et l'accompagnement administratif pour le remboursement. Tant que vous portez vos appareils, nous restons à vos côtés." } },
+      { "@type": "Question", "name": "Les montants sont-ils fixes ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Les conditions et montants INAMI ou mutualité évoluent (indexation, statut BIM/VIPO, règlement interne). Une vérification personnalisée juste avant la commande est recommandée." } },
+      { "@type": "Question", "name": "Et si je ne suis pas satisfait pendant l'essai ?", "acceptedAnswer": { "@type": "Answer", "text": "L'essai n'engage à rien. Vous pouvez interrompre la procédure ou changer de modèle. Notre rôle est de trouver la bonne solution, pas de vendre à tout prix." } }
     ]
   }
   </script>
 </head>
-<body data-page="pricing">
+<body>
+<!-- @header -->
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="AUDIOBEL — Accueil">
-        <img src="assets/img/logo.png" alt="" class="brand-logo" aria-hidden="true">
-        <span class="brand-text">AUDIOBEL</span>
-      </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="index.html" class="nav-link" data-page="home">Accueil</a>
-        <a href="audition.html" class="nav-link" data-page="audition">L'audition</a>
-        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
-        <a href="appareils.html" class="nav-link" data-page="catalog">Appareils</a>
-        <a href="service.html" class="nav-link" data-page="service">Service</a>
-        <a href="prix-remboursement.html" class="nav-link" data-page="pricing">Prix</a>
-        <a href="apropos.html" class="nav-link" data-page="about">À propos</a>
-        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="tel:+32470206226" class="nav-tel">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          <span class="tel-num">0470 20 62 26</span>
-        </a>
-        <a href="tel:+32470206226" class="btn btn-secondary btn-sm">Rendez-vous</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="utility">
+    <div class="container">
+      <div class="utility-info">
+        <span class="open-status" data-open-status>Lun–ven 9h–18h · sam 9h–13h</span>
+        <span class="addr">Rue du Sart-Tilman 384, 4031 Liège</span>
+        <a class="addr" href="tel:+32470206226">0470 20 62 26</a>
+      </div>
+      <div class="text-size" role="group" aria-label="Taille du texte">
+        <button type="button" data-text-size="md" aria-pressed="true" aria-label="Texte normal">A</button>
+        <button type="button" data-text-size="lg" aria-pressed="false" aria-label="Texte agrandi">A+</button>
       </div>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="AUDIOBEL, accueil">
+        <img src="assets/img/logo.webp" alt="" width="46" height="46">
+        <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <a href="audition.html">Votre audition</a>
+        <a href="appareils.html">Appareils</a>
+        <a href="service.html">Bilan &amp; suivi</a>
+        <a href="prix-remboursement.html" aria-current="page">Prix &amp; remboursement</a>
+        <a href="apropos.html">Le centre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+32470206226" class="header-phone" aria-label="Appeler le 0470 20 62 26">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span class="num">0470 20 62 26</span>
+        </a>
+        <a href="rendez-vous.html" class="btn">Prendre rendez-vous</a>
+        <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
+<!-- /@header -->
 
   <main id="contenu">
-
-    <!-- Hero with showcase -->
-    <section class="hero hero-compact">
-      <div class="container hero-grid">
+    <section class="page-hero page-hero--media">
+      <div class="container">
         <div class="reveal">
-          <span class="pill-update">Mis à jour le 8 mars 2026</span>
-          <h1 class="mt-4">Prix &amp; remboursement des appareils auditifs <em>en Belgique</em>.</h1>
-          <p class="lead mt-6">
-            Le prix d'un appareil auditif varie selon le niveau technologique, le type d'appareil et le suivi nécessaire. Chez AUDIOBEL, nous expliquons clairement le coût brut, l'intervention INAMI et le reste à charge.
-          </p>
+          <span class="updated">Mis à jour le 8 mars 2026</span><br>
+          <span class="kicker">Prix &amp; remboursement</span>
+          <h1>Prix &amp; remboursement des appareils auditifs <em>en Belgique</em>.</h1>
+          <p class="lead">Le prix d'un appareil auditif varie selon le niveau technologique, le type d'appareil et le suivi nécessaire. Chez AUDIOBEL, nous expliquons clairement le coût brut, l'intervention INAMI et le reste à charge.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#verification">Vérifier ma situation</a>
-            <a class="btn btn-ghost" href="service.html">Voir le bilan en centre</a>
+            <a class="btn btn--lg" href="#verification">Vérifier ma situation</a>
+            <a class="btn btn--lg btn--outline" href="service.html">Le bilan en centre</a>
           </div>
-          <p class="subtle mt-4">Les montants et conditions de remboursement peuvent évoluer. Contactez-nous pour une vérification personnalisée avant toute décision.</p>
+          <p class="muted" style="font-size: var(--fs-sm); margin-top: 24px">Les montants et conditions de remboursement peuvent évoluer. Contactez-nous pour une vérification personnalisée avant toute décision.</p>
         </div>
 
-        <div class="showcase reveal" aria-label="Appareil AUDIOBEL Prime 9">
-          <span class="showcase-chip">AUDIOBEL Prime 9</span>
-          <span class="showcase-ring showcase-ring-a" aria-hidden="true"></span>
-          <span class="showcase-ring showcase-ring-b" aria-hidden="true"></span>
-          <img class="showcase-product" src="assets/img/Receiver-In-Canal-1.png" alt="Appareil auditif AUDIOBEL Prime 9">
-        </div>
+        <form class="sim reveal" data-sim onsubmit="return false" aria-labelledby="sim-title">
+          <h2 id="sim-title">Estimez votre intervention INAMI</h2>
+          <p>Deux questions, un montant indicatif immédiat.</p>
+          <fieldset>
+            <legend>Âge de la personne appareillée</legend>
+            <div class="choice-grid choice-grid--3">
+              <div class="choice"><input type="radio" name="sim-age" id="sa-enfant" value="enfant"><label for="sa-enfant"><span class="dot"></span><strong>Moins de 18 ans</strong></label></div>
+              <div class="choice"><input type="radio" name="sim-age" id="sa-adulte" value="adulte"><label for="sa-adulte"><span class="dot"></span><strong>18 à 64 ans</strong></label></div>
+              <div class="choice"><input type="radio" name="sim-age" id="sa-senior" value="senior" checked><label for="sa-senior"><span class="dot"></span><strong>65 ans et plus</strong></label></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Oreilles à appareiller</legend>
+            <div class="choice-grid">
+              <div class="choice"><input type="radio" name="sim-oreilles" id="so-1" value="1"><label for="so-1"><span class="dot"></span><strong>Une oreille</strong></label></div>
+              <div class="choice"><input type="radio" name="sim-oreilles" id="so-2" value="2" checked><label for="so-2"><span class="dot"></span><strong>Deux oreilles</strong></label></div>
+            </div>
+          </fieldset>
+          <div class="sim-out" aria-live="polite">
+            <small>Intervention INAMI estimée</small>
+            <output for="sa-enfant sa-adulte sa-senior so-1 so-2">≈ 1 701 €</output>
+            <p data-sim-detail>Intervention INAMI indicative 2026. Votre mutualité peut ajouter une intervention complémentaire.</p>
+          </div>
+        </form>
       </div>
     </section>
 
-    <!-- Conditions INAMI -->
-    <section class="section section-soft">
+    <nav class="subnav" aria-label="Sur cette page">
       <div class="container">
-        <div class="split">
-          <div class="split-content reveal">
-            <span class="eyebrow">Conditions INAMI</span>
+        <ul>
+          <li><a href="#conditions">Conditions INAMI</a></li>
+          <li><a href="#montants">Montants 2026</a></li>
+          <li><a href="#procedure">Procédure</a></li>
+          <li><a href="#verification">Vérification</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="conditions">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="kicker">Conditions INAMI</span>
             <h2>Trois critères de base pour la prise en charge</h2>
-            <p class="muted">Ces critères peuvent être adaptés selon votre dossier médical. Nous vérifions les conditions applicables avec vous.</p>
-            <ul>
-              <li>Perte auditive d'au moins <strong>35 dB</strong> sur l'oreille à appareiller (selon les fréquences de référence).</li>
-              <li>Prescription médicale par un <strong>médecin ORL</strong>.</li>
-              <li>Période d'<strong>essai obligatoire de 28 jours minimum</strong> avec gain auditif objectivé d'au moins 5 dB.</li>
-            </ul>
           </div>
-          <div class="split-image contain reveal">
-            <img src="assets/img/Micro-RIC-RT.png" alt="Appareil auditif intra-auriculaire">
-          </div>
+          <p class="lead">Ces critères peuvent être adaptés selon votre dossier médical. Nous vérifions les conditions applicables avec vous.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l3-8 4 16 3-8h7"/></svg></span>
+            <h3>Au moins 35 dB de perte</h3>
+            <p>Sur l'oreille à appareiller, selon les fréquences de référence.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>
+            <h3>Prescription d'un ORL</h3>
+            <p>Une prescription médicale par un médecin ORL est nécessaire.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></span>
+            <h3>Essai de 28 jours minimum</h3>
+            <p>Période d'essai obligatoire, avec un gain auditif objectivé d'au moins 5 dB.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Tableau INAMI -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Montants indicatifs INAMI 2026</span>
+    <section class="section section--alt" id="montants">
+      <div class="container narrow" style="max-width: 920px">
+        <div class="section-head reveal">
+          <span class="kicker">Montants indicatifs INAMI 2026</span>
           <h2>Combien la sécurité sociale prend-elle en charge ?</h2>
           <p class="lead">Les montants suivants sont des indications basées sur les indexations 2026. Le montant exact dépend de votre statut (BIM/VIPO ou ordinaire) et de votre mutualité.</p>
         </div>
-
         <div class="table-wrap reveal">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Catégorie d'âge</th>
-                <th>1 oreille (monophonique)</th>
-                <th>2 oreilles (stéréophonique)</th>
-              </tr>
-            </thead>
+          <table class="table">
+            <thead><tr><th scope="col">Catégorie d'âge</th><th scope="col">1 oreille (monophonique)</th><th scope="col">2 oreilles (stéréophonique)</th></tr></thead>
             <tbody>
-              <tr>
-                <td><strong>Moins de 18 ans</strong></td>
-                <td data-label="1 oreille">≈ 1 451 €</td>
-                <td data-label="2 oreilles">≈ 2 875 €</td>
-              </tr>
-              <tr>
-                <td><strong>18 à 64 ans</strong></td>
-                <td data-label="1 oreille">≈ 884 €</td>
-                <td data-label="2 oreilles">≈ 1 751 €</td>
-              </tr>
-              <tr>
-                <td><strong>65 ans et plus</strong></td>
-                <td data-label="1 oreille">≈ 859 €</td>
-                <td data-label="2 oreilles">≈ 1 701 €</td>
-              </tr>
+              <tr><th scope="row">Moins de 18 ans</th><td class="amt">≈ 1 451 €</td><td class="amt">≈ 2 875 €</td></tr>
+              <tr><th scope="row">18 à 64 ans</th><td class="amt">≈ 884 €</td><td class="amt">≈ 1 751 €</td></tr>
+              <tr><th scope="row">65 ans et plus</th><td class="amt">≈ 859 €</td><td class="amt">≈ 1 701 €</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="table-note reveal">
-          Les mutualités proposent souvent une intervention complémentaire (Partenamut, Mutualité chrétienne, Solidaris…). Nous vérifions avec vous, avant toute commande.
-        </p>
+        <div class="note reveal">
+          <span class="note-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span>
+          <p>Les mutualités proposent souvent une <strong>intervention complémentaire</strong> (Partenamut, Mutualité chrétienne, Solidaris…). Nous vérifions avec vous, avant toute commande.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Procédure -->
-    <section class="section section-soft">
+    <section class="section" id="procedure">
       <div class="container">
-        <div class="split">
-          <div class="split-content reveal">
-            <span class="eyebrow">Procédure</span>
-            <h2>De l'ORL à la mutuelle, étape par étape</h2>
-            <p class="muted">Nous vous accompagnons à chaque étape administrative pour limiter les démarches de votre côté.</p>
-            <a class="btn btn-primary mt-4" href="tel:+32470206226">Démarrer mon dossier</a>
-          </div>
-
-          <ol class="steps-numbered reveal">
-            <li><strong>Consultation ORL</strong><br><span class="muted">Bilan médical et prescription si nécessaire.</span></li>
-            <li><strong>Bilan auditif AUDIOBEL</strong><br><span class="muted">Examen complet en centre et choix du modèle adapté.</span></li>
-            <li><strong>Essai 28+ jours</strong><br><span class="muted">Test de l'appareil dans votre vie réelle.</span></li>
-            <li><strong>Validation médicale &amp; dossier</strong><br><span class="muted">Constitution du dossier et envoi à la mutualité.</span></li>
-            <li><strong>Réglages finaux &amp; suivi</strong><br><span class="muted">Ajustements après acceptation du remboursement.</span></li>
-          </ol>
+        <div class="section-head section-head--center reveal">
+          <span class="kicker">Procédure</span>
+          <h2>De l'ORL à la mutuelle, étape par étape</h2>
+          <p class="lead">Nous vous accompagnons à chaque étape administrative pour limiter les démarches de votre côté.</p>
+        </div>
+        <ol class="journey reveal">
+          <li><h3>Consultation ORL</h3><p>Bilan médical et prescription si nécessaire.</p></li>
+          <li><h3>Bilan auditif AUDIOBEL</h3><p>Examen complet en centre et choix du modèle adapté.</p></li>
+          <li><h3>Essai 28+ jours</h3><p>Test de l'appareil dans votre vie réelle.</p></li>
+          <li><h3>Validation médicale &amp; dossier</h3><p>Constitution du dossier et envoi à la mutualité.</p></li>
+          <li><h3>Réglages finaux &amp; suivi</h3><p>Ajustements après acceptation du remboursement.</p></li>
+        </ol>
+        <div class="journey-cta reveal">
+          <a class="btn btn--lg" href="rendez-vous.html">Démarrer mon dossier</a>
         </div>
       </div>
     </section>
 
-    <!-- Vérification personnalisée -->
-    <section id="verification" class="section">
-      <div class="container container-narrow">
-        <div class="cta-band-soft reveal">
-          <div>
-            <span class="eyebrow">Vérification personnalisée</span>
-            <h2 class="mt-4">Chaque dossier est unique.</h2>
-            <p>En quelques minutes au téléphone, nous indiquons les conditions probables de prise en charge selon votre audition, votre prescription ORL et votre mutualité. Sans engagement.</p>
+    <section class="section--tight" id="verification">
+      <div class="container">
+        <div class="price-band reveal">
+          <div class="price-grid">
+            <div>
+              <span class="kicker">Vérification personnalisée</span>
+              <h2>Chaque dossier est unique.</h2>
+              <p class="lead">En quelques minutes au téléphone, nous indiquons les conditions probables de prise en charge selon votre audition, votre prescription ORL et votre mutualité. Sans engagement.</p>
+            </div>
+            <div class="price-actions" style="flex-direction: column; align-items: flex-start">
+              <a href="tel:+32470206226" class="btn btn--light btn--lg">Appeler le 0470 20 62 26</a>
+              <a href="rendez-vous.html#question" class="btn btn--ghost-light btn--lg">Être rappelé</a>
+            </div>
           </div>
-          <a href="tel:+32470206226" class="btn btn-primary btn-lg">0470 20 62 26</a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section section-soft">
-      <div class="container container-narrow">
-        <div class="section-header reveal">
-          <span class="eyebrow">Questions fréquentes</span>
+    <section class="section" id="faq">
+      <div class="container faq-layout">
+        <div class="reveal">
+          <span class="kicker">Questions fréquentes</span>
           <h2>Tout ce qu'on vous demande souvent</h2>
         </div>
-
-        <div class="faq">
-          <details class="faq-item reveal" open>
-            <summary>Devrai-je avancer des frais importants ?</summary>
-            <div class="faq-body">
-              <p>Cela dépend du dossier et de votre mutualité. Nous clarifions le reste à charge avant toute validation, pour que vous sachiez exactement à quoi vous attendre.</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Combien de temps dure l'essai ?</summary>
-            <div class="faq-body">
-              <p>L'essai dure au moins 28 jours, en conditions réelles. Des réglages intermédiaires sont prévus selon votre ressenti, et un gain auditif d'au moins 5 dB doit être objectivé pour valider la prise en charge.</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Que comprend l'accompagnement ?</summary>
-            <div class="faq-body">
-              <p>Le choix du modèle, les réglages, le suivi régulier, l'entretien et l'accompagnement administratif pour le remboursement. Tant que vous portez vos appareils, nous restons à vos côtés.</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Les montants sont-ils fixes ?</summary>
-            <div class="faq-body">
-              <p>Non. Les conditions et montants INAMI ou mutualité évoluent (indexation, statut BIM/VIPO, règlement interne). Une vérification personnalisée juste avant la commande est recommandée.</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary>Et si je ne suis pas satisfait pendant l'essai ?</summary>
-            <div class="faq-body">
-              <p>L'essai n'engage à rien. Vous pouvez interrompre la procédure ou changer de modèle. Notre rôle est de trouver la bonne solution, pas de vendre à tout prix.</p>
-            </div>
-          </details>
+        <div class="faq reveal">
+          <details><summary>Devrai-je avancer des frais importants ?</summary><p>Cela dépend du dossier et de votre mutualité. Nous clarifions le reste à charge avant toute validation, pour que vous sachiez exactement à quoi vous attendre.</p></details>
+          <details><summary>Combien de temps dure l'essai ?</summary><p>L'essai dure au moins 28 jours, en conditions réelles. Des réglages intermédiaires sont prévus selon votre ressenti, et un gain auditif d'au moins 5 dB doit être objectivé pour valider la prise en charge.</p></details>
+          <details><summary>Que comprend l'accompagnement ?</summary><p>Le choix du modèle, les réglages, le suivi régulier, l'entretien et l'accompagnement administratif pour le remboursement. Tant que vous portez vos appareils, nous restons à vos côtés.</p></details>
+          <details><summary>Les montants sont-ils fixes ?</summary><p>Non. Les conditions et montants INAMI ou mutualité évoluent (indexation, statut BIM/VIPO, règlement interne). Une vérification personnalisée juste avant la commande est recommandée.</p></details>
+          <details><summary>Et si je ne suis pas satisfait pendant l'essai ?</summary><p>L'essai n'engage à rien. Vous pouvez interrompre la procédure ou changer de modèle. Notre rôle est de trouver la bonne solution, pas de vendre à tout prix.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="section-tight">
-      <div class="container">
-        <div class="cta-band reveal">
-          <div class="cta-band-inner">
-            <div>
-              <span class="eyebrow">On clarifie ?</span>
-              <h2 class="mt-4">Un appel pour estimer votre prise en charge.</h2>
-              <p>Plus efficace qu'un devis en ligne approximatif : nous vérifions votre situation réelle.</p>
-            </div>
-            <a href="tel:+32470206226" class="btn btn-light btn-lg">
-              0470 20 62 26
-              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
-          </div>
+    <section class="section section--alt final-cta">
+      <div class="container reveal">
+        <span class="kicker">On clarifie ?</span>
+        <h2>Un appel pour estimer votre prise en charge.</h2>
+        <p class="lead">Plus efficace qu'un devis en ligne approximatif : nous vérifions votre situation réelle.</p>
+        <div class="hero-actions">
+          <a class="btn btn--lg" href="tel:+32470206226">Appeler le 0470 20 62 26</a>
+          <a class="btn btn--lg btn--outline" href="rendez-vous.html">Demander un rendez-vous</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
+<!-- @footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div>
           <a href="index.html" class="brand">
-            <img src="assets/img/logo-nav2-transparent.png" alt="" class="brand-logo">
-            <span class="brand-text">AUDIOBEL</span>
+            <img src="assets/img/logo.webp" alt="" width="46" height="46">
+            <span class="brand-name">AUDIOBEL<small>Centre auditif · Liège</small></span>
           </a>
-          <p>Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
+          <p class="footer-about">Centre auditif indépendant à Liège. Bilans cliniques, essais d'appareils 30 jours et suivi personnalisé depuis 2012.</p>
         </div>
-        <div class="footer-col">
-          <h4>Site</h4>
+        <div>
+          <h4>Comprendre</h4>
           <ul>
-            <li><a href="audition.html">L'audition</a></li>
-            <li><a href="solutions.html">Solutions auditives</a></li>
-            <li><a href="appareils.html">Types d'appareils</a></li>
-            <li><a href="service.html">Service &amp; bilan</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Infos</h4>
-          <ul>
+            <li><a href="audition.html">Votre audition</a></li>
+            <li><a href="audition.html#acouphenes">Acouphènes</a></li>
+            <li><a href="appareils.html">Appareils &amp; marques</a></li>
             <li><a href="prix-remboursement.html">Prix &amp; remboursement</a></li>
-            <li><a href="apropos.html">À propos du centre</a></li>
-            <li><a href="contact.html">Contact &amp; accès</a></li>
-            <li><a href="tel:+32470206226">Prendre rendez-vous</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Centre AUDIOBEL</h4>
-          <div class="footer-contact-line">
-            <div>
-              <strong>Adresse</strong>
-              Rue du Sart-Tilman 384, 4031 Liège
-            </div>
-          </div>
-          <div class="footer-contact-line" style="margin-top: 14px;">
-            <div>
-              <strong>Téléphone</strong>
-              <a href="tel:+32470206226">0470 20 62 26</a>
-            </div>
-          </div>
+        <div>
+          <h4>Le centre</h4>
+          <ul>
+            <li><a href="service.html">Bilan &amp; suivi</a></li>
+            <li><a href="apropos.html">Notre philosophie</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+            <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous trouver</h4>
+          <ul>
+            <li>Rue du Sart-Tilman 384<br>4031 Liège</li>
+            <li><a href="tel:+32470206226">0470 20 62 26</a></li>
+            <li>Lun–ven 9h–18h · sam 9h–13h</li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-current-year>2026</span> AUDIOBEL — Tous droits réservés</span>
-        <div class="footer-legal">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Cookies</a>
-        </div>
+        <span>© <span data-year>2026</span> AUDIOBEL · Tous droits réservés</span>
+        <nav aria-label="Liens légaux">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Revenir en haut de page">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
+  <div class="mobile-bar">
+    <a class="btn btn--outline" href="tel:+32470206226">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      Appeler
+    </a>
+    <a class="btn" href="rendez-vous.html">Prendre rendez-vous</a>
+  </div>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
 </body>
 </html>
